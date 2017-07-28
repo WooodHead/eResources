@@ -53,7 +53,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html"><span>Resources</span></a></li>
-        <li class=""> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Projects<!--  <span class="caret"></span></span> --></a>
+        <li class=""> <a href="#nogo" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Projects<!--  <span class="caret"></span></span> --></a>
           <!-- <ul class="dropdown-menu">
             <li><a href="sales-ticket.html">Sales Ticket</a></li>
             <li><a href="uplist-cashier.html">Uplist Management</a></li>
@@ -71,12 +71,12 @@
       <div class="row filter-container">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <div class="dropdown">
-            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown">Select Technology
+            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">Select Technology</span>
             <i class="material-icons">keyboard_arrow_down</i></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-              <li><a href="#">Walk-in</a></li>
-              <li><a href="#">Appointment</a></li>
-              <li><a href="#">N/A</a></li>
+              <li><a href="#nogo">Walk-in</a></li>
+              <li><a href="#nogo">Appointment</a></li>
+              <li><a href="#nogo">N/A</a></li>
             </ul>
           </div>
         </div>
@@ -85,30 +85,30 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right">
           <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Select Project(s)
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Select Project(s)</span>
             <i class="material-icons">keyboard_arrow_down</i></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Walk-in</a></li>
-              <li><a href="#">Appointment</a></li>
-              <li><a href="#">N/A</a></li>
+              <li><a href="#nogo">Alpha</a></li>
+              <li><a href="#nogo">Beta</a></li>
+              <li><a href="#nogo">Gamma</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="row page-title">
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 table-caption">
-          <legend>List of 
+          <h1>List of 
             <div class="dropdown" style="display: inline-block;">
-              <button>Available<i class="material-icons">keyboard_arrow_down</i></button>
-              <div class="dropdown-content" style="left:0;">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
+              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Assigned</span><i class="material-icons">keyboard_arrow_down</i></button>
+              <ul class="dropdown-menu" style="left:0;">
+                <li><a href="#nogo">Available</a></li>
+                <li><a href="#nogo">Assigned</a></li>
+                <li><a href="#nogo">All</a></li>
+              </ul>
             </div>
 
-            Resources from <input type="text" class="weeklyDatePicker1"> to <input type="text" class="weeklyDatePicker2"></legend></div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary">+ Add Resources</button></legend></div>
+            Resources from <input type="text" class="weeklyDatePicker1"> to <input type="text" class="weeklyDatePicker2"></h1></div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ Add Resources</button></legend></div>
       </div>
       <div class="table-container">
       	<div class="table-data-wrapper">
@@ -267,5 +267,28 @@
 <footer>
     <div class="copyright-container">Copyright &copy; 2017 Conn's. All rights reserved.</div>
 </footer> 
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><img src="images/logo.png">Add new Resource</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 </body>
 </html>

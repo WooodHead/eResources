@@ -17,6 +17,21 @@ window.onload=function(){
   
 $(document).ready(function(){
 
+$("body").on('click','.dropdown-menu li', function(){
+   var initStatusTxt = $(this).parent().prev().children('.txt').text();
+   var initStatusVal = $(this).parent().prev().children('.txt').attr('value');
+
+   var statusTxt = $(this).text().replace(/done/g, '');
+   var statusVal = $(this).attr('value');
+   $(this).parent().prev().children('.txt').text(statusTxt);
+   $(this).parent().prev().children('.txt').attr('value', statusVal);
+   $(this).parent().children().removeClass('selected');
+   //$(this).parent().find('i').remove();
+   $(this).addClass('selected');
+   //$(this).prepend('<i class="material-icons">done</i>');
+});
+
+
   //Initialize the datePicker(I have taken format as mm-dd-yyyy, you can     //have your owh)
   $('.weeklyDatePicker1').datetimepicker({
     useCurrent: false,
