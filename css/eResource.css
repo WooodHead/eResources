@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-body{font-family: "OpenSansRegular"}
+body{font-family: "OpenSansRegular"; color:#333;}
 .mandatory{
 	color:#ff0000;
 }
@@ -21,46 +21,41 @@ body{font-family: "OpenSansRegular"}
 .form-control {
 	margin: 5px 0;
 }
-header {
-	background: #EFEFEF;
-	box-shadow: none;
-	min-height: 45px;
-}
 .header-panel {
-	background: url(../images/bkg_header.png) repeat-x;
+	background: #58595b;
 	height: 32px;
 }
 .header-row {
-	height: 78px;
+	background:#efefef;
+	height: 80px;
 	margin: 0 auto;
-	padding: 5px 10px 0;
-	width: 970px;
+	padding: 8px 10px 0;
+	width:100%;
 }
 .header-row .heading {
-	color: #5c5d5e;
-	font-size: 22px;
+	color: #5a5a5a;
+	font-size: 25px;
 	font-family: "OpenSansBold";
-	padding: 0 0 0 8px;
 	display: inline-block;
 	position: relative;
-    top: 5px;
+    top: 8px;
     left: 17px;
     text-shadow: 2px 2px #fff;
 }
 .header-row .heading:before {
 	content: ' ';
-    border-left: solid 1px #949596;
-    height: 65px;
+    border-left: solid 1px #7b7c7d;
+    height: 62px;
     position: absolute;
-    top: -13px;
-    left: -5px;
+    top: -10px;
+    left: -11px;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	background-color: transparent;
 	color: #000;
 }
 #header-account {
-	margin-top: 3px;
+	margin-top: 5px;
 	text-align: right;
 }
 ul.links, ul.links li {
