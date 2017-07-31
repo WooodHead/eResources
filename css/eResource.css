@@ -18,9 +18,6 @@ body{font-family: "OpenSansRegular"; color:#333;}
 	margin: 0 auto 10px;
 	padding: 20px 0;
 }
-.form-control {
-	margin: 5px 0;
-}
 .header-panel {
 	background: #58595b;
 	height: 32px;
@@ -250,11 +247,17 @@ button.btn-primary:active, .open>.dropdown-toggle.btn-primary, .open>.dropdown-t
     top: 6px;
     left: 4px;
 }
+#resourceDetails select{
+    margin: 5px 0;
+}
 footer {
     bottom: 0;
     position: fixed;
     width: 100%;
     z-index: 1;
+}
+.modal-footer button {
+    margin-left: 10px;
 }
 .copyright-container {
     background: #58595b;
@@ -531,7 +534,9 @@ th, td { white-space: nowrap; }
     display: none;
 }
 /* calendar css ends here */
-
+.form-group .work > div {
+    padding: 0;
+}
 /* modal style starts here */
 .modal-content {
     border-radius: 0;
@@ -679,8 +684,10 @@ ul#pronav {
 .content {
     margin: 15px;   
 }
-
-    }
+.modal-dialog {
+    width: 950px;
+}
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
