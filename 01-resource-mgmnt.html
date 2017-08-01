@@ -116,9 +116,10 @@
             	 <table id="resources" class="stripe row-border order-column table" cellspacing="0" width="100%">
                     <thead>
                         <tr>
+                            <th><input type="checkbox"></th>
                             <th>Employee ID</th>
                             <th>Employee Name</th>
-                            <th>Project Name</th>
+                            <th>Project Assigned</th>
                             <th>06/05/17</th>
                             <th>06/12/17</th>
                             <th>06/12/17</th>
@@ -144,6 +145,7 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>John.Doe</td>
                             <td>Justin Theriot</td>
                             <td>Alpha</td>
@@ -170,10 +172,15 @@
                             <td>160</td>
                         </tr>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>Betty.Jones</td>
                             <td>Kenny Turner</td>
                             <td>Beta</td>
-                            <td>40</td>
+                            <td>40<ul class="dropdown-menu" style="left:0;">
+                <li><a href="#nogo">Available</a></li>
+                <li><a href="#nogo">Assigned</a></li>
+                <li><a href="#nogo">All</a></li>
+              </ul></td>
                             <td>40</td>
                             <td>40</td>
                             <td>40</td>
@@ -196,6 +203,7 @@
                             <td>160</td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox"></td>
                            <td>Hazel.Smith</td>
                             <td>Hazel Smith</td>
                             <td>Gamma</td>
@@ -222,6 +230,7 @@
                             <td>160</td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox"></td>
                            <td>Roger.Twose</td>
                             <td>Roger Twose</td>
                             <td>Gamma</td>
@@ -314,6 +323,24 @@
                   </div>
                 </div>
                 <div class="form-group">
+                <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Employee Type</label>
+                  <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                    <select id="role">
+                      <option>- Select -</option>
+                      <option>Permanent</option>
+                      <option>Contractual</option>
+                    </select>
+                  </div>
+                  <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Status</label>
+                  <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                    <select id="role">
+                      <option>- Select -</option>
+                      <option>Permanent</option>
+                      <option>Contractual</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="mobile">Mobile#</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
                     <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile" name="mobile">
@@ -371,12 +398,11 @@
                        <table id="resourcesProjectDetails" class="stripe row-border order-column table modal-table" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                    <th width="90">Project Name</th>
-                                    <th width="90">Project Owner</th>
-                                    <th width="90">Project Name</th>
-                                    <th width="90">Start Date</th>
-                                    <th width="90">End Date</th>
-                                    <th width="90">Technology</th>
+                                    <th>Project Name</th>
+                                    <th>Project Owner</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Technology</th>
                                     <th>06/19/17</th>
                                     <th>06/26/17</th>
                                     <th>07/03/17</th>
@@ -399,12 +425,11 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td width="120">John.Doe</td>
-                                    <td width="120">Justin Theriot</td>
-                                    <td width="90">Alpha</td>
-                                    <td width="90">40</td>
-                                    <td>40</td>
-                                    <td>40</td>
+                                    <td>John.Doe</td>
+                                    <td>Justin Theriot</td>
+                                    <td>07/03/17</td>
+                                    <td>08/21/17</td>
+                                    <td>HTML</td>
                                     <td>40</td>
                                     <td>40</td>
                                     <td>40</td>
@@ -427,10 +452,9 @@
                                 <tr>
                                     <td>Betty.Jones</td>
                                     <td>Kenny Turner</td>
-                                    <td>Beta</td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                    <td>40</td>
+                                    <td>07/03/17</td>
+                                    <td>08/21/17</td>
+                                    <td>Java</td>
                                     <td>40</td>
                                     <td>40</td>
                                     <td>40</td>
@@ -453,10 +477,9 @@
                                 <tr>
                                    <td>Hazel.Smith</td>
                                     <td>Hazel Smith</td>
-                                    <td>Gamma</td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                    <td>40</td>
+                                    <td>07/03/17</td>
+                                    <td>08/21/17</td>
+                                    <td>PHP</td>
                                     <td>40</td>
                                     <td>40</td>
                                     <td>40</td>
@@ -479,10 +502,9 @@
                                 <tr class="availability">
                                    <td>Roger.Twose</td>
                                     <td>Roger Twose</td>
-                                    <td>Gamma</td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                    <td>40</td>
+                                    <td>07/03/17</td>
+                                    <td>08/21/17</td>
+                                    <td>Not Applicable</td>
                                     <td>40</td>
                                     <td>40</td>
                                     <td>40</td>
@@ -514,11 +536,11 @@
                        <table id="asignNewPorject" class="stripe row-border order-column table modal-table" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                    <th width="90">Project Name</th>
-                                    <th width="90">Project Owner</th>
-                                    <th width="90">Start Date</th>
-                                    <th width="90">End Date</th>
-                                    <th width="90">Technology</th>
+                                    <th>Project Name</th>
+                                    <th>Project Owner</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Technology</th>
                                     <th>06/19/17</th>
                                     <th>06/26/17</th>
                                     <th>07/03/17</th>
@@ -541,7 +563,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td width="90">
+                                    <td>
                                       <select>
                                         <option>- Select -</option>
                                         <option>Alpha</option>
@@ -549,8 +571,9 @@
                                         <option>Gamma</option>
                                       </select>
                                     </td>
-                                    <td width="90"><input type="text" size="10"></td>
-                                    <td width="90"><input type="text" size="10"></td>
+                                    <td><input type="text" size="10"></td>
+                                    <td><input type="text" size="10"></td>
+                                    <td><input type="text" size="10"></td>
                                     <td>
                                       <select>
                                         <option>- Select -</option>
@@ -558,7 +581,6 @@
                                         <option>HTML</option>
                                       </select>
                                     </td>
-                                    <td><input type="text" size="5"></td>
                                     <td><input type="text" size="5"></td>
                                     <td><input type="text" size="5"></td>
                                     <td><input type="text" size="5"></td>

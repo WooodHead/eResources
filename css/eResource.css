@@ -276,8 +276,28 @@ footer {
     width: 100%;
     z-index: 1;
 }
+.modal-body .nav-tabs li {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f7f7f7, #d5d8db); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f7f7f7, #d5d8db); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f7f7f7, #d5d8db); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f7f7f7, #d5d8db); /* Standard syntax (must be last) */
+}
+.modal-body .nav-tabs li:first-child{
+    margin-left: 20px;
+}
+.modal-body .nav-tabs li {
+    margin-right: 15px;
+}
+.modal-body .nav-tabs li a {
+    margin-right: 0;
+}
 .modal-footer button {
     margin-left: 10px;
+}
+.modal-footer a {
+    color: #333;
+    font-weight: bold;
 }
 .copyright-container {
     background: #58595b;
@@ -381,7 +401,9 @@ a.next:after {
     border-right: none;
     overflow-x: scroll;*/
 }
-
+input[type=checkbox], input[type=radio] {
+    margin: 2px 0 0;
+}
 .table-data-container table {
     margin: 0;
 }
@@ -459,6 +481,10 @@ tr:nth-child(even) {
         /*width: 800px;*/
         margin: 0 auto;
     }
+    div.dataTables_wrapper table input {
+        /*width: 800px;*/
+        margin: 3px 0px;
+    }
     
     .table.dataTable { border-collapse: separate; border-spacing: 0; }
     .table.dataTable td {
@@ -469,7 +495,9 @@ tr:nth-child(even) {
         line-height: 14px;
         word-wrap: break-word;
         text-align: left;
+        position: relative;
     }
+
     .table.dataTable th {
       border: solid 1px #c5c5c5;
       border-style: solid solid none none;
@@ -477,13 +505,16 @@ tr:nth-child(even) {
     .table>thead:first-child>tr:first-child>th {
         border-top: 1px solid #c5c5c5;
     }
+    /*.table.dataTable td:hover */.dropdown-menu {
+        display: block;
+    }
 
 .modal-table tr:first-child th:first-child { border-top-left-radius: 10px; }
 .modal-table tr:first-child th:last-child { border-top-right-radius: 10px; }
 .modal-table tr:last-child td:first-child { border-bottom-left-radius: 10px; }
 .modal-table .DTFC_RightBodyWrapper  tr:last-child td:last-child { border-bottom-right-radius: 10px; }
 .modal-table tr:first-child td { border-top-style: solid; }
-.modal-table tr td:first-child { border-left-style: solid; }
+/*.modal-table tr td:first-child { border-left-style: solid; }*/
 
 
     .DTFC_LeftHeadWrapper .table>thead:first-child>tr:first-child>th:first-child {

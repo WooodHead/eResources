@@ -6,10 +6,10 @@ var resources_table = $('#resources').DataTable( {
         scrollCollapse: true,
         paging:         false,
         fixedColumns:   {
-            leftColumns: 3,
+            leftColumns: 4,
             rightColumns: 1
         }
-    } );asignNewPorject
+    } );
 var resourcesDetailProject_table = $('#resourcesProjectDetails').DataTable( {
         scrollY:        "300px",
         scrollX:        true,
@@ -27,7 +27,7 @@ var asignNewPorject = $('#asignNewPorject').DataTable( {
         scrollCollapse: true,
         paging:         false,
         fixedColumns:   {
-            leftColumns: 4,
+            leftColumns: 5,
             rightColumns: 1
         }
     } );
