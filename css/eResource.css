@@ -80,6 +80,18 @@ ul.links li {
 ul.links li:last-child {
 	border-right: none;
 }
+
+span.calendaricon{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+}
+span.calendaricon i {
+    color: #e02930;
+}
 .navbar-default .navbar-nav .active {
 	background-color: #b8251a;
 }
@@ -151,7 +163,7 @@ ul.links li:last-child {
 .table-caption .dropdown.open button.btn {
     background-color: transparent;
 }
-.table-caption h1 {
+.table-caption h1, .table-caption h4 {
     display: block;
     width: 100%;
     padding: 0;
@@ -162,7 +174,8 @@ ul.links li:last-child {
     border: 0;
     margin: 0;
 }
-.table-caption h1 button.btn {
+.table-caption h1 button.btn,
+.table-caption h4 button.btn {
     border: 0;
     padding: 0;
     font-size: 21px;
@@ -172,6 +185,13 @@ ul.links li:last-child {
     top: -2px;
     color: #333;
     border-bottom: dotted 1px #64a7e8;
+}
+.table-caption h4 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.availability td {
+    background-color: #dfffdf;
 }
 button.btn:hover {
     /*background: #c6392d;
@@ -218,7 +238,7 @@ button.btn-primary:active, .open>.dropdown-toggle.btn-primary, .open>.dropdown-t
     position: relative;
     right: 0px;
 }
-.table-caption > h1 > input {
+.table-caption > h1 > input, .table-caption > h4 > input {
     border: 0;
     border-bottom: dotted 1px #64a7e8;
     width: 120px;
@@ -395,12 +415,15 @@ tr:nth-child(even) {
     font-size: 11px;
     margin-top: -8px;
 }
-
-th, td { white-space: nowrap; }
+.DTFC_ScrollWrapper {
+    height: auto !important;
+}
+.dataTable th, .dataTable td { white-space: nowrap; }
     .DTFC_Cloned {
       background-color: #fff;
     }
-    .DTFC_LeftFootWrapper td, #resources_filter{
+
+    .DTFC_LeftFootWrapper td, #resources_filter, .dataTables_filter{
       /*display: none;*/
        height: 20px;
       visibility: hidden;
@@ -451,6 +474,15 @@ th, td { white-space: nowrap; }
     .table>thead:first-child>tr:first-child>th {
         border-top: 1px solid #c5c5c5;
     }
+
+.modal-table tr:first-child th:first-child { border-top-left-radius: 10px; }
+.modal-table tr:first-child th:last-child { border-top-right-radius: 10px; }
+.modal-table tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+.modal-table tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+.modal-table tr:first-child td { border-top-style: solid; }
+.modal-table tr td:first-child { border-left-style: solid; }
+
+
     .DTFC_LeftHeadWrapper .table>thead:first-child>tr:first-child>th:first-child {
         border-left: 1px solid #c5c5c5;
     }
@@ -480,7 +512,14 @@ th, td { white-space: nowrap; }
     .bootstrap-datetimepicker-widget tr:hover {
         background-color: #808080;
     }
-
+.modal-content .dataTables_wrapper .DTFC_LeftWrapper, .modal-content .dataTables_wrapper .DTFC_RightWrapper {
+    width: auto !important;
+}
+.modal-content .dataTables_wrapper .DTFC_LeftBodyWrapper, .modal-content .dataTables_wrapper .DTFC_LeftBodyLiner, .modal-content .dataTables_wrapper .DTFC_RightBodyWrapper {
+    height: auto !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+}
 .dropdown {
     position: relative;
 }

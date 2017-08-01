@@ -1,6 +1,38 @@
 window.onload=function(){
-  $(document).ready(function() {
-    var table = $('#resources').DataTable( {
+
+var resources_table = $('#resources').DataTable( {
+        scrollY:        "300px",
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:   {
+            leftColumns: 3,
+            rightColumns: 1
+        }
+    } );asignNewPorject
+var resourcesDetailProject_table = $('#resourcesProjectDetails').DataTable( {
+        scrollY:        "300px",
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:   {
+            leftColumns: 4,
+            rightColumns: 1
+        }
+    } );
+
+var asignNewPorject = $('#asignNewPorject').DataTable( {
+        scrollY:        "300px",
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:   {
+            leftColumns: 4,
+            rightColumns: 1
+        }
+    } );
+
+var projectResourcesDetails = $('#projectResourcesDetails').DataTable( {
         scrollY:        "300px",
         scrollX:        true,
         scrollCollapse: true,
@@ -11,10 +43,16 @@ window.onload=function(){
         }
     } );
 
-});
-
-
-  
+var resourcesAssigned = $('#resourcesAssigned').DataTable( {
+        scrollY:        "300px",
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:   {
+            leftColumns: 3,
+            rightColumns: 1
+        }
+    } );
 $(document).ready(function(){
 
 $("body").on('click','.dropdown-menu li', function(){
@@ -41,11 +79,41 @@ $("body").on('click','.dropdown-menu li', function(){
        useCurrent: false, //Important! See issue #1075
        format: 'MM-DD-YYYY'
    });
+   $('.weeklyDatePicker3').datetimepicker({
+    useCurrent: false,
+    format: 'MM-DD-YYYY'
+   });
+   $('.weeklyDatePicker4').datetimepicker({
+       useCurrent: false, //Important! See issue #1075
+       format: 'MM-DD-YYYY'
+   });
+   $('.weeklyDatePicker5').datetimepicker({
+    useCurrent: false,
+    format: 'MM-DD-YYYY'
+   });
+   $('.weeklyDatePicker6').datetimepicker({
+       useCurrent: false, //Important! See issue #1075
+       format: 'MM-DD-YYYY'
+   });
    $(".weeklyDatePicker1").on("dp.change", function (e) {
        $('.weeklyDatePicker2').data("DateTimePicker").minDate(e.date);
    });
    $(".weeklyDatePicker2").on("dp.change", function (e) {
        $('.weeklyDatePicker1').data("DateTimePicker").maxDate(e.date);
+   });
+
+   $(".weeklyDatePicker3").on("dp.change", function (e) {
+       $('.weeklyDatePicker4').data("DateTimePicker").minDate(e.date);
+   });
+   $(".weeklyDatePicker4").on("dp.change", function (e) {
+       $('.weeklyDatePicker3').data("DateTimePicker").maxDate(e.date);
+   });
+
+   $(".weeklyDatePicker5").on("dp.change", function (e) {
+       $('.weeklyDatePicker6').data("DateTimePicker").minDate(e.date);
+   });
+   $(".weeklyDatePicker6").on("dp.change", function (e) {
+       $('.weeklyDatePicker5').data("DateTimePicker").maxDate(e.date);
    });
 
  $('.weeklyDatePicker1').on('dp.change', function (e) {
@@ -56,11 +124,46 @@ $("body").on('click','.dropdown-menu li', function(){
       //$(".weeklyDatePicker1").val(firstDate1 + " - " + lastDate1);
   });
 
+
   $('.weeklyDatePicker2').on('dp.change', function (e) {
       var value = $(".weeklyDatePicker2").val();
       var firstDate2 = moment(value, "MM-DD-YYYY").day(1).format("MM-DD-YYYY");
       var lastDate2 =  moment(value, "MM-DD-YYYY").day(5).format("MM-DD-YYYY");
       $(".weeklyDatePicker2").val(firstDate2);
+      //$(".weeklyDatePicker2").val(firstDate2 + " - " + lastDate2);
+  });
+
+   $('.weeklyDatePicker3').on('dp.change', function (e) {
+      var value = $(".weeklyDatePicker3").val();
+      var firstDate3 = moment(value, "MM-DD-YYYY").day(1).format("MM-DD-YYYY");
+      var lastDate3 =  moment(value, "MM-DD-YYYY").day(5).format("MM-DD-YYYY");
+      $(".weeklyDatePicker3").val(firstDate3);
+      //$(".weeklyDatePicker1").val(firstDate1 + " - " + lastDate1);
+  });
+ 
+
+  $('.weeklyDatePicker4').on('dp.change', function (e) {
+      var value = $(".weeklyDatePicker4").val();
+      var firstDate4 = moment(value, "MM-DD-YYYY").day(1).format("MM-DD-YYYY");
+      var lastDate4 =  moment(value, "MM-DD-YYYY").day(5).format("MM-DD-YYYY");
+      $(".weeklyDatePicker4").val(firstDate4);
+      //$(".weeklyDatePicker2").val(firstDate2 + " - " + lastDate2);
+  });
+
+  $('.weeklyDatePicker5').on('dp.change', function (e) {
+      var value = $(".weeklyDatePicker5").val();
+      var firstDate3 = moment(value, "MM-DD-YYYY").day(1).format("MM-DD-YYYY");
+      var lastDate3 =  moment(value, "MM-DD-YYYY").day(5).format("MM-DD-YYYY");
+      $(".weeklyDatePicker5").val(firstDate3);
+      //$(".weeklyDatePicker1").val(firstDate1 + " - " + lastDate1);
+  });
+ 
+
+  $('.weeklyDatePicker6').on('dp.change', function (e) {
+      var value = $(".weeklyDatePicker6").val();
+      var firstDate4 = moment(value, "MM-DD-YYYY").day(1).format("MM-DD-YYYY");
+      var lastDate4 =  moment(value, "MM-DD-YYYY").day(5).format("MM-DD-YYYY");
+      $(".weeklyDatePicker6").val(firstDate4);
       //$(".weeklyDatePicker2").val(firstDate2 + " - " + lastDate2);
   });
 

@@ -52,8 +52,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html"><span>Resources</span></a></li>
-        <li class=""> <a href="#nogo" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Projects<!--  <span class="caret"></span></span> --></a>
+        <li class="active"><a href="01-resource-mgmnt.html"><span>Resources</span></a></li>
+        <li> <a href="005a-add-project-details.html"><span>Projects<!--  <span class="caret"></span> --></span></a>
           <!-- <ul class="dropdown-menu">
             <li><a href="sales-ticket.html">Sales Ticket</a></li>
             <li><a href="uplist-cashier.html">Uplist Management</a></li>
@@ -253,6 +253,7 @@
         </div>
       </div>
 
+
       <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><button type="button" class="btn btn-primary pull-right">Delete Resource</button></div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagination">
@@ -355,22 +356,238 @@
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="skillSet">Skill Set</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <select id="skillSet">
-                      <option>Java</option>
-                      <option>HTML</option>
-                    </select>
+                    <input type="text" class="form-control" id="skillSet" placeholder="Enter Skill set" name="skillSet">
                   </div>
                 </div>
               </form>
             </div>
+            <!-- tab 1 ends here -->
+            <!-- tab 2 content starts here -->
             <div id="projectDetails" class="tab-pane fade">
-              <h3>Menu 2</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <div class="table-caption"><h4>List of Projects currently assigned from <input type="text" class="weeklyDatePicker3"> to <input type="text" class="weeklyDatePicker4"></h4></div>
+              <div class="table-container">
+                <div class="table-data-wrapper">
+                  <div class="table-data-container ">
+                       <table id="resourcesProjectDetails" class="stripe row-border order-column table modal-table" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="90">Project Name</th>
+                                    <th width="90">Project Owner</th>
+                                    <th width="90">Project Name</th>
+                                    <th width="90">Start Date</th>
+                                    <th width="90">End Date</th>
+                                    <th width="90">Technology</th>
+                                    <th>06/19/17</th>
+                                    <th>06/26/17</th>
+                                    <th>07/03/17</th>
+                                    <th>07/10/17</th>
+                                    <th>07/17/17</th>
+                                    <th>07/24/17</th>
+                                    <th>07/31/17</th>
+                                    <th>08/07/17</th>
+                                    <th>08/014/17</th>
+                                    <th>08/21/17</th>
+                                    <th>08/28/17</th>
+                                    <th>09/04/17</th>
+                                    <th>09/11/17</th>
+                                    <th>09/18/17</th>
+                                    <th>09/25/17</th>
+                                    <th>10/02/17</th>
+                                    <th>10/09/17</th>
+                                    <th>Grandtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="90">John.Doe</td>
+                                    <td width="90">Justin Theriot</td>
+                                    <td width="90">Alpha</td>
+                                    <td width="90">40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>160</td>
+                                </tr>
+                                <tr>
+                                    <td>Betty.Jones</td>
+                                    <td>Kenny Turner</td>
+                                    <td>Beta</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>160</td>
+                                </tr>
+                                <tr>
+                                   <td>Hazel.Smith</td>
+                                    <td>Hazel Smith</td>
+                                    <td>Gamma</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>160</td>
+                                </tr>
+                                <tr class="availability">
+                                   <td>Roger.Twose</td>
+                                    <td>Roger Twose</td>
+                                    <td>Gamma</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>160</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+              <div class="table-caption"><h4>Assign New Project</h4></div>
+              <div class="table-container">
+                <div class="table-data-wrapper">
+                  <div class="table-data-container ">
+                       <table id="asignNewPorject" class="stripe row-border order-column table modal-table" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="90">Project Name</th>
+                                    <th width="90">Project Owner</th>
+                                    <th width="90">Start Date</th>
+                                    <th width="90">End Date</th>
+                                    <th width="90">Technology</th>
+                                    <th>06/19/17</th>
+                                    <th>06/26/17</th>
+                                    <th>07/03/17</th>
+                                    <th>07/10/17</th>
+                                    <th>07/17/17</th>
+                                    <th>07/24/17</th>
+                                    <th>07/31/17</th>
+                                    <th>08/07/17</th>
+                                    <th>08/014/17</th>
+                                    <th>08/21/17</th>
+                                    <th>08/28/17</th>
+                                    <th>09/04/17</th>
+                                    <th>09/11/17</th>
+                                    <th>09/18/17</th>
+                                    <th>09/25/17</th>
+                                    <th>10/02/17</th>
+                                    <th>10/09/17</th>
+                                    <th>Grand Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="90">
+                                      <select>
+                                        <option>- Select -</option>
+                                        <option>Alpha</option>
+                                        <option>Beta</option>
+                                        <option>Gamma</option>
+                                      </select>
+                                    </td>
+                                    <td width="90"><input type="text" size="10"></td>
+                                    <td width="90"><input type="text" size="10"></td>
+                                    <td>
+                                      <select>
+                                        <option>- Select -</option>
+                                        <option>Java</option>
+                                        <option>HTML</option>
+                                      </select>
+                                    </td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5"></td>
+                                    <td><input type="text" size="5" value="160"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <a href="#nogo">Cancel</a>
+          <a href="#nogo" data-dismiss="modal">Cancel</a>
           <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
         </div>
       </div>
