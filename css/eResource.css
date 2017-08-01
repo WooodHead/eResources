@@ -550,7 +550,23 @@ tr:nth-child(even) {
     background-color: #3e8e41;
 }
 
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+}
 /* calendar css starts from here  */
 .bootstrap-datetimepicker-widget table td, .bootstrap-datetimepicker-widget table th {
     border-radius: 0;
