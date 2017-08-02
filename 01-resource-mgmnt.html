@@ -315,29 +315,38 @@
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Role</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <select id="role">
-                      <option>- Select -</option>
-                      <option>Manager</option>
-                      <option>Programmer</option>
-                    </select>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" id="role" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select Role</span>
+                      <i class="material-icons">keyboard_arrow_down</i></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li><a href="#nogo">Manager</a></li>
+                        <li><a href="#nogo">Programmer</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="form-group">
-                <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Employee Type</label>
+                <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="empType">Employee Type</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <select id="role">
-                      <option>- Select -</option>
-                      <option>Permanent</option>
-                      <option>Contractual</option>
-                    </select>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" id="empType" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select Employee Type</span>
+                      <i class="material-icons">keyboard_arrow_down</i></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li><a href="#nogo">Permanent</a></li>
+                        <li><a href="#nogo">Contractual</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Status</label>
+                  <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="status">Status</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <select id="role">
-                      <option>- Select -</option>
-                      <option>Permanent</option>
-                      <option>Contractual</option>
-                    </select>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select Employee Type</span>
+                      <i class="material-icons">keyboard_arrow_down</i></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li><a href="#nogo">Assigned</a></li>
+                        <li><a href="#nogo">Available</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="form-group">
@@ -363,11 +372,15 @@
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="workLocation">Work Location</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <select id="workLocation">
-                      <option>Fremont</option>
-                      <option>Thane</option>
-                      <option>Pune</option>
-                    </select>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" id="workLocation" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select Work Loacation</span>
+                      <i class="material-icons">keyboard_arrow_down</i></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li><a href="#nogo">Fremont</a></li>
+                        <li><a href="#nogo">Thane</a></li>
+                        <li><a href="#nogo">Pune</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="form-group">
@@ -382,8 +395,14 @@
                 </div>
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="skillSet">Skill Set</label>
-                  <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="skillSet" placeholder="Enter Skill set" name="skillSet">
+                  <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 skill-container dropdown">
+                    <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">Select Technology</span>
+            <i class="material-icons">keyboard_arrow_down</i></button>
+                    <ul class="dropdown-menu">
+                      <li><input type="checkbox"><a href="#nogo">Java</a></li>
+                      <li><input type="checkbox"><a href="#nogo">HTML</a></li>
+                      <li><input type="checkbox"><a href="#nogo">PHP</a></li>
+                    </ul>
                   </div>
                 </div>
               </form>

@@ -209,13 +209,20 @@ button.btn-primary:active, .open>.dropdown-toggle.btn-primary, .open>.dropdown-t
     background: linear-gradient(#58595b, #7f7f7f);
     border-color: #58595b;*/
 }
-.dropdown-toggle + .dropdown-menu{
+.dropdown-toggle + .dropdown-menu, .skill-container .dropdown-menu{
     border: 1px solid #c5c5c5;
     border-top:solid 2px #d4382a;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin: -2px 0 0;
     min-width: 100%;
+}
+.skill-container .dropdown-menu {
+    min-width: 90%;
+    margin-left: 15px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 .dropdown-toggle {
     color: #555;
@@ -509,7 +516,14 @@ tr:nth-child(even) {
     /*.table.dataTable td:hover */.dropdown-menu {
         display: block;
     }
-
+.skill-container {
+    position: relative;
+}
+.skill-container i{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
 .modal-table tr:first-child th:first-child { border-top-left-radius: 10px; }
 .modal-table tr:first-child th:last-child { border-top-right-radius: 10px; }
 .modal-table tr:last-child td:first-child { border-bottom-left-radius: 10px; }
