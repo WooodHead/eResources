@@ -81,7 +81,7 @@ $(document).ready(function(){
   });
 $("body").on('click','.selected-technologies label i', function(){
   $(this).parent('label').remove();
-  //$("#"+$(this).parent('label'))
+  $("#"+$(this).parent('label').attr("name")).click();
 })
   $("body").on('click','.dropdown-menu li', function(e){
      var initStatusTxt = $(this).parent().prev().children('.txt').text();
