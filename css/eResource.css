@@ -480,6 +480,7 @@ tr:nth-child(even) {
     div.dataTables_wrapper {
         /*width: 800px;*/
         margin: 0 auto;
+        margin-top: 20px;
     }
     div.dataTables_wrapper table input {
         /*width: 800px;*/

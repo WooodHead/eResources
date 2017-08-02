@@ -81,11 +81,11 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center search">
-          <input type="text" placeholder="Search Projects Name"><a href="#nogo" class="search-icon"><i class="material-icons">search</i></a>
+          <input type="text" placeholder="Search Project Name"><a href="#nogo" class="search-icon"><i class="material-icons">search</i></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right">
           <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Select Resource(s)</span>
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Select Resources</span>
             <i class="material-icons">keyboard_arrow_down</i></button>
             <ul class="dropdown-menu">
               <li><a href="#nogo">Alpha</a></li>
@@ -101,14 +101,14 @@
             <div class="dropdown" style="display: inline-block;">
               <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Assigned</span><i class="material-icons">keyboard_arrow_down</i></button>
               <ul class="dropdown-menu" style="left:0;">
-                <li><a href="#nogo">Available</a></li>
-                <li><a href="#nogo">Assigned</a></li>
+                <li><a href="#nogo">Active</a></li>
+                <li><a href="#nogo">Halted</a></li>
                 <li><a href="#nogo">All</a></li>
               </ul>
             </div>
 
             Projects from <input type="text" class="weeklyDatePicker1"> to <input type="text" class="weeklyDatePicker2"></h1></div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ Add Projects</button></legend></div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ Add Project</button></legend></div>
       </div>
       <div class="table-container">
       	<div class="table-data-wrapper">
@@ -116,21 +116,21 @@
             	 <table id="resources" class="stripe row-border order-column table" cellspacing="0" width="100%">
                     <thead>
                         <tr>
-                            <th>Employee ID</th>
-                            <th>Employee Name</th>
                             <th>Project Name</th>
-                            <th>06/05/17</th>
-                            <th>06/12/17</th>
-                            <th>06/12/17</th>
-                            <th>06/19/17</th>
-                            <th>06/26/17</th>
+                            <th>Project Owner</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
                             <th>07/03/17</th>
                             <th>07/10/17</th>
                             <th>07/17/17</th>
                             <th>07/24/17</th>
                             <th>07/31/17</th>
                             <th>08/07/17</th>
-                            <th>08/014/17</th>
+                            <th>08/14/17</th>
+                            <th>08/21/17</th>
+                            <th>08/21/17</th>
+                            <th>08/07/17</th>
+                            <th>08/14/17</th>
                             <th>08/21/17</th>
                             <th>08/28/17</th>
                             <th>09/04/17</th>
@@ -139,67 +139,15 @@
                             <th>09/25/17</th>
                             <th>10/02/17</th>
                             <th>10/09/17</th>
-                            <th>Grandtotal</th>
+                            <th>Grand Total</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>John.Doe</td>
-                            <td>Justin Theriot</td>
-                            <td>Alpha</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>160</td>
-                        </tr>
-                        <tr>
-                            <td>Betty.Jones</td>
-                            <td>Kenny Turner</td>
-                            <td>Beta</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>160</td>
-                        </tr>
-                        <tr>
-                           <td>Hazel.Smith</td>
-                            <td>Hazel Smith</td>
                             <td>Gamma</td>
-                            <td>40</td>
+                            <td>Karen Murphy</td>
+                            <td>07/03/17</td>
+                            <td>08/21/17</td>
                             <td>40</td>
                             <td>40</td>
                             <td>40</td>
@@ -222,10 +170,62 @@
                             <td>160</td>
                         </tr>
                         <tr>
-                           <td>Roger.Twose</td>
-                            <td>Roger Twose</td>
-                            <td>Gamma</td>
+                            <td>Delta</td>
+                            <td>Trevor Matthews</td>
+                            <td>07/03/17</td>
+                            <td>08/21/17</td>
                             <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Alpha</td>
+                            <td>Kim Smith</td>
+                            <td>07/03/17</td>
+                            <td>08/21/17</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Beta</td>
+                            <td>Erika Branson</td>
+                            <td>07/03/17</td>
+                            <td>08/21/17</td>
                             <td>40</td>
                             <td>40</td>
                             <td>40</td>
@@ -254,7 +254,7 @@
       </div>
 
       <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><button type="button" class="btn btn-primary pull-right">Delete Projects</button></div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><button type="button" class="btn btn-primary pull-right">Delete Project</button></div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagination">
               <a class="navigate-first" href="#nogo"><i class="material-icons">navigate_before</i></a>
               <a class="navigate-before" href="#nogo"><i class="material-icons">navigate_before</i></a>
@@ -409,9 +409,9 @@
                        <table id="resourcesAssigned" class="stripe row-border order-column table modal-table" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                    <th width="60"><input type="checkbox"></th>
-                                    <th width="120">Employee ID</th>
-                                    <th width="120">Employee Name</th>
+                                    <th width="30"><input type="checkbox"></th>
+                                    <th width="90">Employee ID</th>
+                                    <th width="90">Employee Name</th>
                                     <th>06/19/17</th>
                                     <th>06/26/17</th>
                                     <th>07/03/17</th>

@@ -5,6 +5,9 @@ var resources_table = $('#resources').DataTable( {
         scrollX:        true,
         scrollCollapse: true,
         paging:         false,
+        "sort": false,
+        "order": [],
+        "searching": false,
         fixedColumns:   {
             leftColumns: 4,
             rightColumns: 1
@@ -15,6 +18,9 @@ var resourcesDetailProject_table = $('#resourcesProjectDetails').DataTable( {
         scrollX:        true,
         scrollCollapse: true,
         paging:         false,
+        "sort": false,
+        "order": [],
+        "searching": false,
         fixedColumns:   {
             leftColumns: 4,
             rightColumns: 1
@@ -26,6 +32,9 @@ var asignNewPorject = $('#asignNewPorject').DataTable( {
         scrollX:        true,
         scrollCollapse: true,
         paging:         false,
+        "sort": false,
+        "order": [],
+        "searching": false,
         fixedColumns:   {
             leftColumns: 5,
             rightColumns: 1
@@ -37,6 +46,9 @@ var projectResourcesDetails = $('#projectResourcesDetails').DataTable( {
         scrollX:        true,
         scrollCollapse: true,
         paging:         false,
+        "sort": false,
+        "order": [],
+        "searching": false,
         fixedColumns:   {
             leftColumns: 3,
             rightColumns: 1
@@ -48,6 +60,9 @@ var resourcesAssigned = $('#resourcesAssigned').DataTable( {
         scrollX:        true,
         scrollCollapse: true,
         paging:         false,
+        "sort": false,
+        "order": [],
+        "searching": false,
         fixedColumns:   {
             leftColumns: 3,
             rightColumns: 1
