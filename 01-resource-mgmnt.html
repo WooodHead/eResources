@@ -85,7 +85,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right">
           <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Select Project(s)</span>
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Select Projects</span>
             <i class="material-icons">keyboard_arrow_down</i></button>
             <ul class="dropdown-menu">
               <li><a href="#nogo">Alpha</a></li>
@@ -108,7 +108,7 @@
             </div>
 
             Resources from <input type="text" class="weeklyDatePicker1"> to <input type="text" class="weeklyDatePicker2"></h1></div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ Add Resources</button></legend></div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ Add Resource</button></legend></div>
       </div>
       <div class="table-container">
       	<div class="table-data-wrapper">
@@ -264,14 +264,16 @@
 
 
       <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><button type="button" class="btn btn-primary pull-right">Delete Resource</button></div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagination">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pagination">
               <a class="navigate-first" href="#nogo"><i class="material-icons">navigate_before</i></a>
               <a class="navigate-before" href="#nogo"><i class="material-icons">navigate_before</i></a>
                 Page <input type="text" size=""> / 65 
               <a class="navigate-next" href="#nogo"><i class="material-icons">navigate_next</i></a>
               <a class="navigate-last" href="#nogo"><i class="material-icons">navigate_next</i></a>
           </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button type="button" class="btn btn-primary pull-right">Delete Resource</button></div>
+          
       </div>
     </div>
 <footer>
@@ -301,17 +303,17 @@
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="fname">First Name</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                    <input type="text" class="form-control" id="fname" placeholder="" name="fname">
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="lname">Last Name</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                    <input type="text" class="form-control" id="lname" placeholder="" name="lname">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="email">Employee ID</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="email" placeholder="Enter Employee ID" name="empId">
+                    <input type="text" class="form-control" id="email" placeholder="" name="empId">
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Role</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
@@ -340,7 +342,7 @@
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="status">Status</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
                     <div class="dropdown">
-                      <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select Employee Type</span>
+                      <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Status</span>
                       <i class="material-icons">keyboard_arrow_down</i></button>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                         <li><a href="#nogo">Assigned</a></li>
@@ -352,22 +354,22 @@
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="mobile">Mobile#</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile" name="mobile">
+                    <input type="text" class="form-control" id="mobile" placeholder="" name="mobile">
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="home">Home#</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="home" placeholder="Enter Home Phone Number" name="home">
+                    <input type="text" class="form-control" id="home" placeholder="" name="home">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="work">Work#</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 work">
                     <div class="col-sm-4 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" id="work" placeholder="Enter Work Phone Number" name="work">
+                      <input type="text" class="form-control" id="work" placeholder="" name="work">
                     </div>
                     <label class="control-label col-sm-2 col-md-2 col-lg-2" for="ext">Ext</label>
                     <div class="col-sm-4 col-md-4 col-lg-4">
-                      <input type="text" class="form-control" id="ext" placeholder="Enter Extension" name="ext">
+                      <input type="text" class="form-control" id="ext" placeholder="" name="ext">
                     </div>
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="workLocation">Work Location</label>
@@ -386,22 +388,23 @@
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="email">Email</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <input type="text" class="form-control" id="email" placeholder="" name="email">
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="aEmail">Alternate#</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="aEmail" placeholder="Enter Alternate email" name="aEmail">
+                    <input type="text" class="form-control" id="aEmail" placeholder="" name="aEmail">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="skillSet">Skill Set</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 skill-container dropdown">
-                    <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">Select Technology</span>
-            <i class="material-icons">keyboard_arrow_down</i></button>
-                    <ul class="dropdown-menu">
-                      <li><input type="checkbox"><a href="#nogo">Java</a></li>
-                      <li><input type="checkbox"><a href="#nogo">HTML</a></li>
-                      <li><input type="checkbox"><a href="#nogo">PHP</a></li>
+                    <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">&nbsp;</span>
+                    <i class="material-icons">keyboard_arrow_down</i></button>
+                    <div class="selected-technologies"></div>
+                    <ul class="skillSet-menu">
+                      <li><input type="checkbox" id="java"><label for="java">Java</label></li>
+                      <li><input type="checkbox" id="html"><label for="html">HTML</label></li>
+                      <li><input type="checkbox" id="php"><label for="php">PHP</label></li>
                     </ul>
                   </div>
                 </div>

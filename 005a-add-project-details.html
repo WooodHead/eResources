@@ -116,6 +116,7 @@
             	 <table id="resources" class="stripe row-border order-column table" cellspacing="0" width="100%">
                     <thead>
                         <tr>
+                            <th><input type="checkbox"></th>
                             <th>Project Name</th>
                             <th>Project Owner</th>
                             <th>Start Date</th>
@@ -144,6 +145,7 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>Gamma</td>
                             <td>Karen Murphy</td>
                             <td>07/03/17</td>
@@ -170,6 +172,7 @@
                             <td>160</td>
                         </tr>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>Delta</td>
                             <td>Trevor Matthews</td>
                             <td>07/03/17</td>
@@ -196,7 +199,8 @@
                             <td>160</td>
                         </tr>
                         <tr>
-                           <td>Alpha</td>
+                            <td><input type="checkbox"></td>
+                            <td>Alpha</td>
                             <td>Kim Smith</td>
                             <td>07/03/17</td>
                             <td>08/21/17</td>
@@ -222,7 +226,8 @@
                             <td>160</td>
                         </tr>
                         <tr>
-                           <td>Beta</td>
+                            <td><input type="checkbox"></td>
+                            <td>Beta</td>
                             <td>Erika Branson</td>
                             <td>07/03/17</td>
                             <td>08/21/17</td>
@@ -254,14 +259,15 @@
       </div>
 
       <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><button type="button" class="btn btn-primary pull-right">Delete Project</button></div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagination">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pagination">
               <a class="navigate-first" href="#nogo"><i class="material-icons">navigate_before</i></a>
               <a class="navigate-before" href="#nogo"><i class="material-icons">navigate_before</i></a>
                 Page <input type="text" size=""> / 65 
               <a class="navigate-next" href="#nogo"><i class="material-icons">navigate_next</i></a>
               <a class="navigate-last" href="#nogo"><i class="material-icons">navigate_next</i></a>
           </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button type="button" class="btn btn-primary pull-right">Delete Project</button></div>
       </div>
     </div>
 <footer>
@@ -513,31 +519,47 @@
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="name">Name</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                    <input type="text" class="form-control" id="name" placeholder="" name="name">
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="description">Description</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+                    <input type="text" class="form-control" id="description" placeholder="" name="description">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="startDate">Start Date</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <span class="calendaricon"><i class="material-icons">today</i></span><input type="text" class="form-control weeklyDatePicker5" id="startDate" placeholder="Start Date" name="startDate">
+                    <span class="calendaricon"><i class="material-icons">today</i></span><input type="text" class="form-control weeklyDatePicker5" id="startDate" placeholder="" name="startDate">
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="endDate">End Date</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <span class="calendaricon"><i class="material-icons">today</i></span><input type="text" class="form-control weeklyDatePicker6" id="endDate" placeholder="End Date" name="endDate">
+                    <span class="calendaricon"><i class="material-icons">today</i></span><input type="text" class="form-control weeklyDatePicker6" id="endDate" placeholder="" name="endDate">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="projectManager">Project Manager</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="projectManager" placeholder="Project Manager" name="projectManager">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" id="projectManager" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Project Manager</span>
+                      <i class="material-icons">keyboard_arrow_down</i></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li><a href="#nogo">Karen Murphy</a></li>
+                        <li><a href="#nogo">Trevor Matthews</a></li>
+                        <li><a href="#nogo">Kim Smith</a></li>
+                        <li><a href="#nogo">Erika Branson</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="status">Status</label>
                   <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <input type="text" class="form-control" id="status" placeholder="Status" name="status">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Status</span>
+                      <i class="material-icons">keyboard_arrow_down</i></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li><a href="#nogo">Assigned</a></li>
+                        <li><a href="#nogo">Available</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </form>

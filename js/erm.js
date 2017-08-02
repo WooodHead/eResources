@@ -9,7 +9,7 @@ var resources_table = $('#resources').DataTable( {
         "order": [],
         "searching": false,
         fixedColumns:   {
-            leftColumns: 4,
+            leftColumns: 5,
             rightColumns: 1
         }
     } );
@@ -70,17 +70,32 @@ var resourcesAssigned = $('#resourcesAssigned').DataTable( {
     } );
 $(document).ready(function(){
 
-$("body").on('click','.dropdown-menu li', function(){
-   var initStatusTxt = $(this).parent().prev().children('.txt').text();
-   var initStatusVal = $(this).parent().prev().children('.txt').attr('value');
 
-   var statusTxt = $(this).text().replace(/done/g, '');
-   var statusVal = $(this).attr('value');
-   $(this).parent().prev().children('.txt').text(statusTxt);
-   $(this).parent().prev().children('.txt').attr('value', statusVal);
-   $(this).parent().children().removeClass('selected');
-   //$(this).parent().find('i').remove();
-   $(this).addClass('selected');
+  $("body").on('click','.skill-container li label', function(e){
+    // console.log('i m in skill-container');
+    var selectedSkill = $(this).text();
+    var selectedSkillId = $(this).attr('for');
+    console.log(selectedSkill + "--> "+ selectedSkillId);
+    //var currentStatus = $(this).prev();
+    $(this).parents().find('.selected-technologies').append("<label name="+selectedSkillId+">"+selectedSkill+"<i class='material-icons'>close</i></label");
+  });
+$("body").on('click','.selected-technologies label i', function(){
+  $(this).parent('label').remove();
+  //$("#"+$(this).parent('label'))
+})
+  $("body").on('click','.dropdown-menu li', function(e){
+     var initStatusTxt = $(this).parent().prev().children('.txt').text();
+     var initStatusVal = $(this).parent().prev().children('.txt').attr('value');
+console.log("ji");
+     var statusTxt = $(this).text().replace(/done/g, '');
+     var statusVal = $(this).attr('value');
+     $(this).parent().prev().children('.txt').text(statusTxt);
+     $(this).parent().prev().children('.txt').attr('value', statusVal);
+     $(this).parent().children().removeClass('selected');
+     //$(this).parent().find('i').remove();
+     $(this).addClass('selected');
+  
+   
    //$(this).prepend('<i class="material-icons">done</i>');
 });
 
