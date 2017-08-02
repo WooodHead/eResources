@@ -225,7 +225,10 @@ button.btn-primary:active, .open>.dropdown-toggle.btn-primary, .open>.dropdown-t
     -webkit-columns: 2;
     -moz-columns: 2;
     margin: 0;
+    position: absolute;
+    background-color: #fff;
     padding: 0;
+    list-style-type: none;
 }
 .skill-container .skillSet-menu>li>label {
     display: inline-block;
@@ -469,7 +472,7 @@ tr:nth-child(even) {
 .selected-technologies {
     position: absolute;
     left: 20px;
-    top: 8px;
+    top: 3px;
 }
 .selected-technologies label {
     background: #eeeff0;
