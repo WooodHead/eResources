@@ -75,7 +75,7 @@ $(document).ready(function(){
     // console.log('i m in skill-container');
     var selectedSkill = $(this).text();
     var selectedSkillId = $(this).attr('for');
-    console.log(selectedSkill + "--> "+ selectedSkillId);
+    //console.log(selectedSkill + "--> "+ selectedSkillId);
     //var currentStatus = $(this).prev();
     $(this).parents().find('.selected-technologies').append("<label name="+selectedSkillId+">"+selectedSkill+"<i class='material-icons'>close</i></label");
   });
@@ -86,7 +86,7 @@ $("body").on('click','.selected-technologies label i', function(){
   $("body").on('click','.dropdown-menu li', function(e){
      var initStatusTxt = $(this).parent().prev().children('.txt').text();
      var initStatusVal = $(this).parent().prev().children('.txt').attr('value');
-console.log("ji");
+//console.log("ji");
      var statusTxt = $(this).text().replace(/done/g, '');
      var statusVal = $(this).attr('value');
      $(this).parent().prev().children('.txt').text(statusTxt);
