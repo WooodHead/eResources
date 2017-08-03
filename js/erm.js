@@ -69,7 +69,12 @@ var resourcesAssigned = $('#resourcesAssigned').DataTable( {
         }
     } );
 $(document).ready(function(){
-
+// tootip script starts 
+$(".tool-tip-section").hide();
+  $(".scrollable td > span").hover(function(){
+    $(this).next().fadeToggle();
+  });
+// tootip script ends 
 
   $("body").on('click','.skill-container li input', function(e){
     // console.log('i m in skill-container');

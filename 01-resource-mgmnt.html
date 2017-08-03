@@ -1,37 +1,37 @@
   <!DOCTYPE html>
   <html>
   <head>
-  <meta charset="utf-8">
-  <title>Resource Management</title>
-  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">    
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/2.10.6/moment.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-  <link href="css/eResource.css" rel="stylesheet" type="text/css" />
-  <link href="css/fonts.css" rel="stylesheet" type="text/css" />
-  <link href="css/animate.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
-  <script type="text/javascript" src="//cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.js"></script>
-  <script type="text/javascript" src="js/erm.js"></script>
+    <meta charset="utf-8">
+    <title>Resource Management</title>
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">    
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/2.10.6/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <link href="css/eResource.css" rel="stylesheet" type="text/css" />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.js"></script>
+    <script type="text/javascript" src="js/erm.js"></script>
   </head>
 
   <body>
-  <header>
-  <div class="header-panel">
-    	<div class="col-sm-6 col-md-4 col-xs-12 pull-right">
-  	<div id="header-account">
-  			<ul class="links">
-           <li class="first">Welcome <strong>John Doe</strong> (Sales Associate)</li>
-           <li class="last"><a href="login.html">Logout</a></li>
-        </ul>
-  	</div>
-  	<div class="clear"></div>
-  </div>
-    </div>
-    <div class="header-row"> 
+    <header>
+      <div class="header-panel">
+       <div class="col-sm-6 col-md-4 col-xs-12 pull-right">
+         <div id="header-account">
+           <ul class="links">
+             <li class="first">Welcome, <strong>John Doe</strong> (Sales Associate)</li>
+             <li class="last"><a href="login.html">Logout</a></li>
+           </ul>
+         </div>
+         <div class="clear"></div>
+       </div>
+     </div>
+     <div class="header-row"> 
       <!-- Title -->
       <span class="header-logo"><img src="images/conns_home_plus_logo.png"></span>
       <p class="heading">eResource Management</p>
@@ -67,11 +67,12 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container spacer-bottom">
-        <!-- Form Name -->
-        <div class="row filter-container">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="dropdown">
-              <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">Select Technology</span>
+    <!-- Form Name -->
+        <div class="row filter-container"><!-- filter-container -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1"></div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">Select Technology</span>
               <i class="material-icons">keyboard_arrow_down</i></button>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                 <li><a href="#nogo">Java</a></li>
@@ -80,23 +81,24 @@
               </ul>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center search">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center search">
             <input type="text" placeholder="Search Resource Name"><a href="#nogo" class="search-icon"><i class="material-icons">search</i></a>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 text-right">
             <div class="dropdown">
               <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Select Projects</span>
-              <i class="material-icons">keyboard_arrow_down</i></button>
-              <ul class="dropdown-menu">
-                <li><a href="#nogo">Alpha</a></li>
-                <li><a href="#nogo">Beta</a></li>
-                <li><a href="#nogo">Gamma</a></li>
-              </ul>
+                <i class="material-icons">keyboard_arrow_down</i></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#nogo">Alpha</a></li>
+                  <li><a href="#nogo">Beta</a></li>
+                  <li><a href="#nogo">Gamma</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1"></div>
           </div>
-        </div>
         <div class="row page-title">
-          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 table-caption">
+          <div class="col-xs-12 col-sm-8 col-md-9 col-lg-8 table-caption">
             <h1>List of 
               <div class="dropdown" style="display: inline-block;">
                 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Assigned</span><i class="material-icons">keyboard_arrow_down</i></button>
@@ -108,566 +110,984 @@
               </div>
 
               Resources from <input type="text" class="weeklyDatePicker1"> to <input type="text" class="weeklyDatePicker2"></h1></div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ Add Resource</button></legend></div>
-        </div>
-        <div class="row eResourcetable">
-          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 left-table">
+              <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addResource"><i class="material-icons">add</i> Add Resource</button></legend></div>
+            </div>
+            <div class="row eResourcetable">
+              <div class="col-xs-4 col-sm-7 col-md-6 col-lg-4 left-table">
                 <table class="table" cellspacing="0" cellpadding="0" border="0">
                   <thead>
-                          <tr>
-                              <th><input type="checkbox"></th>
-                              <th>Employee ID</th>
-                              <th>Employee Name</th>
-                              <th>Project Assigned</th>
-
-                            </tr>
-                          </thead>
+                    <tr>
+                      <th><input type="checkbox" id="test1"></th>
+                      <th>Employee ID</th>
+                      <th>Employee Name</th>
+                      <th>Project Assigned</th>
+                    </tr>
+                  </thead>
                   <tbody>
-                          <tr>
-                              <td><input type="checkbox"></td>
-                              <td>John.Doe</td>
-                              <td>Justin Theriot</td>
-                              <td>Alpha</td>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td><a  data-toggle="modal" data-target="#viewResourceDetails" href="#nogo">John.Doe</a></td>
+                      <td>Justin Theriot</td>
+                      <td>Alpha</td>
 
                     </tr>
                     <tr>
-                              <td><input type="checkbox"></td>
-                              <td>Betty.Jones</td>
-                              <td>Kenny Turner</td>
-                              <td>Beta</td>
+                      <td><input type="checkbox"></td>
+                      <td>Betty.Jones</td>
+                      <td>Kenny Turner</td>
+                      <td>Beta</td>
                     </tr>
                     <tr>
-                            <td><input type="checkbox"></td>
-                             <td>Hazel.Smith</td>
-                              <td>Hazel Smith</td>
-                              <td>Gamma</td>
-                      </tr>
                       <td><input type="checkbox"></td>
-                             <td>Roger.Twose</td>
-                              <td>Roger Twose</td>
-                              <td>Gamma</td>
-                            </tbody>
+                      <td>Hazel.Smith</td>
+                      <td>Hazel Smith</td>
+                      <td>Gamma</td>
+                    </tr>
+                    <td><input type="checkbox"></td>
+                    <td>Roger.Twose</td>
+                    <td>Roger Twose</td>
+                    <td>Gamma</td>
                   </tbody>
-                </table>
-                </div>
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 scrollable">
-                  <div>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                            <th>06/05/17</th>
-                            <th>06/12/17</th>
-                            <th>06/12/17</th>
-                            <th>06/19/17</th>
-                            <th>06/26/17</th>
-                            <th>07/03/17</th>
-                            <th>07/10/17</th>
-                            <th>07/17/17</th>
-                            <th>07/24/17</th>
-                            <th>07/31/17</th>
-                            <th>08/07/17</th>
-                            <th>08/14/17</th>
-                            <th>08/21/17</th>
-                            <th>08/28/17</th>
-                            <th>09/04/17</th>
-                            <th>09/11/17</th>
-                            <th>09/18/17</th>
-                            <th>09/25/17</th>
-                            <th>10/02/17</th>
-                            <th>10/09/17</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                        </tr>
-                        <tr>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                        </tr>
-                        <tr>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                        </tr>
-                        <tr>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                        </tr>
-</tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 right-table">
+              </table>
+            </div>
+            <div class="col-xs-7 col-sm-4 col-md-4 col-lg-7 scrollable">
+              <div>
                 <table class="table">
                   <thead>
-                  <th>Grandtotal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                      <td>160</td>
-                        </tr>
-                        <tr>
-                      <td>160</td>
-                        </tr>
-                        <tr>
-                      <td>160</td>
-                        </tr>
-                        <tr>
-                      <td>160</td>
-                        </tr>
-
-                    </tbody>
+                    <tr>
+                      <th>06/05/17</th>
+                      <th>06/12/17</th>
+                      <th>06/12/17</th>
+                      <th>06/19/17</th>
+                      <th>06/26/17</th>
+                      <th>07/03/17</th>
+                      <th>07/10/17</th>
+                      <th>07/17/17</th>
+                      <th>07/24/17</th>
+                      <th>07/31/17</th>
+                      <th>08/07/17</th>
+                      <th>08/14/17</th>
+                      <th>08/21/17</th>
+                      <th>08/28/17</th>
+                      <th>09/04/17</th>
+                      <th>09/11/17</th>
+                      <th>09/18/17</th>
+                      <th>09/25/17</th>
+                      <th>10/02/17</th>
+                      <th>10/09/17</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="resource-no">40</span>
+                          <div class="tool-tip-section">
+                          <ul>
+                            <li><span>Beta </span><span>: 20 hours</span></li>
+                            <li><span>Gamma </span><span>: 20 hours</span></li>
+                          </ul>
+                          </div>
+                      </td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                      <td>40</td>
+                    </tr>
+                  </tbody>
                 </table>
-                </div>
-          </div>
-        <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pagination">
-                <a class="navigate-first" href="#nogo"><i class="material-icons">navigate_before</i></a>
-                <a class="navigate-before" href="#nogo"><i class="material-icons">navigate_before</i></a>
-                  Page <input type="text" size=""> / 65 
-                <a class="navigate-next" href="#nogo"><i class="material-icons">navigate_next</i></a>
-                <a class="navigate-last" href="#nogo"><i class="material-icons">navigate_next</i></a>
+              </div>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button type="button" class="btn btn-primary pull-right">Delete Resource</button></div>
-            
+            <div class="col-xs-1 col-sm-1 col-md-2 col-lg-1 right-table">
+              <table class="table">
+                <thead>
+                  <th>Grandtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>160</td>
+                </tr>
+                <tr>
+                  <td>160</td>
+                </tr>
+                <tr>
+                  <td>160</td>
+                </tr>
+                <tr>
+                  <td>160</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pagination">
+            <a class="navigate-first" href="#nogo"><i class="material-icons">navigate_before</i></a>
+            <a class="navigate-before" href="#nogo"><i class="material-icons">navigate_before</i></a>
+            Page <span class="pagination-input-wrapper"><input type="text" size="" maxlength="2"></span> / 65 
+            <a class="navigate-next" href="#nogo"><i class="material-icons">navigate_next</i></a>
+            <a class="navigate-last" href="#nogo"><i class="material-icons">navigate_next</i></a>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button type="button" class="btn btn-primary pull-right">Delete Resource</button></div>
+
         </div>
       </div>
-  <footer>
-      <div class="copyright-container">Copyright &copy; 2017 Conn's. All rights reserved.</div>
-  </footer> 
+      <footer>
+        <div class="copyright-container">Copyright &copy; 2017 Conn's. All rights reserved.</div>
+      </footer> 
 
 
-  <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-      
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title"><img src="images/logo.png">Add new Resource</h4>
-          </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#resourceDetails">Resource Details</a></li>
-              <li><a data-toggle="tab" href="#projectDetails">Project Details</a></li>
-            </ul>
+      <!-- Modal -->
+      <div class="modal fade" id="addResource" role="dialog">
+        <div class="modal-dialog">
 
-            <div class="tab-content">
-              <div id="resourceDetails" class="tab-pane fade in active">
-                <form class="form-horizontal" action="#nogo">
-                  <div class="form-group">
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="fname">First Name</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <input type="text" class="form-control" id="fname" placeholder="" name="fname">
-                    </div>
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="lname">Last Name</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <input type="text" class="form-control" id="lname" placeholder="" name="lname">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="email">Employee ID</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <input type="text" class="form-control" id="email" placeholder="" name="empId">
-                    </div>
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Role</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <div class="dropdown">
-                        <button class="btn dropdown-toggle" id="role" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select</span>
-                        <i class="material-icons">keyboard_arrow_down</i></button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li><a href="#nogo">Manager</a></li>
-                          <li><a href="#nogo">Programmer</a></li>
-                        </ul>
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"><img src="images/logo.png">Add new Resource</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#resourceDetails">Resource Details</a></li>
+                <li><a data-toggle="tab" href="#projectDetails">Project Details</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="resourceDetails" class="tab-pane fade in active">
+                  <form class="form-horizontal" action="#nogo">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="fname">First Name</label>
+                      <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                        <input type="text" class="form-control" id="fname" placeholder="" name="fname">
+                      </div>
+                      <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="lname">Last Name</label>
+                      <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                        <input type="text" class="form-control" id="lname" placeholder="" name="lname">
                       </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                  <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="empType">Employee Type</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <div class="dropdown">
-                        <button class="btn dropdown-toggle" id="empType" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select</span>
-                        <i class="material-icons">keyboard_arrow_down</i></button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li><a href="#nogo">Permanent</a></li>
-                          <li><a href="#nogo">Contractual</a></li>
-                        </ul>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="email">Employee ID</label>
+                      <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                        <input type="text" class="form-control" id="email" placeholder="" name="empId">
                       </div>
-                    </div>
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="status">Status</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <div class="dropdown">
-                        <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Status</span>
-                        <i class="material-icons">keyboard_arrow_down</i></button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li><a href="#nogo">Assigned</a></li>
-                          <li><a href="#nogo">Available</a></li>
-                        </ul>
+                      <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Role</label>
+                      <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" id="role" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select</span>
+                            <i class="material-icons">keyboard_arrow_down</i></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                              <li><a href="#nogo">Manager</a></li>
+                              <li><a href="#nogo">Programmer</a></li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      <div class="form-group">
+                        <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="empType">Employee Type</label>
+                        <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                          <div class="dropdown">
+                            <button class="btn dropdown-toggle" id="empType" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select</span>
+                              <i class="material-icons">keyboard_arrow_down</i></button>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li><a href="#nogo">Permanent</a></li>
+                                <li><a href="#nogo">Contractual</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="status">Status</label>
+                          <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                            <div class="dropdown">
+                              <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Status</span>
+                                <i class="material-icons">keyboard_arrow_down</i></button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                  <li><a href="#nogo">Assigned</a></li>
+                                  <li><a href="#nogo">Available</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="mobile">Mobile#</label>
+                            <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                              <input type="text" class="form-control" id="mobile" placeholder="" name="mobile">
+                            </div>
+                            <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="home">Home#</label>
+                            <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                              <input type="text" class="form-control" id="home" placeholder="" name="home">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="work">Work#</label>
+                            <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 work">
+                              <div class="col-sm-4 col-md-6 col-lg-6">
+                                <input type="text" class="form-control" id="work" placeholder="" name="work">
+                              </div>
+                              <label class="control-label col-sm-2 col-md-2 col-lg-2" for="ext">Ext</label>
+                              <div class="col-sm-4 col-md-4 col-lg-4">
+                                <input type="text" class="form-control" id="ext" placeholder="" name="ext">
+                              </div>
+                            </div>
+                            <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="workLocation">Location</label>
+                            <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" id="workLocation" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select</span>
+                                  <i class="material-icons">keyboard_arrow_down</i></button>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                    <li><a href="#nogo">Fremont</a></li>
+                                    <li><a href="#nogo">Spring</a></li>
+                                    <li><a href="#nogo">Houston</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="email">Email</label>
+                              <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                                <input type="text" class="form-control" id="email" placeholder="" name="email">
+                              </div>
+                              <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="aEmail">Alternate#</label>
+                              <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                                <input type="text" class="form-control" id="aEmail" placeholder="" name="aEmail">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="skillSet">Skill Set</label>
+                              <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 skill-container dropdown">
+                                <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">&nbsp;</span>
+                                  <i class="material-icons">keyboard_arrow_down</i></button>
+                                  <div class="selected-technologies"></div>
+                                  <ul class="skillSet-menu">
+                                    <li><input type="checkbox" id="java"><label for="java">Java</label></li>
+                                    <li><input type="checkbox" id="html"><label for="html">HTML</label></li>
+                                    <li><input type="checkbox" id="php"><label for="php">PHP</label></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <!-- tab 1 ends here -->
+                          <!-- tab 2 content starts here -->
+                          <div id="projectDetails" class="tab-pane fade">
+                            <div class="table-caption"><h4>List of Projects currently assigned from <input type="text" class="weeklyDatePicker3"> to <input type="text" class="weeklyDatePicker4"></h4></div>
+                            <div class="row eResourcetable">
+                                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 left-table">
+                                  <table class="table" cellspacing="0" cellpadding="0" border="0">
+                                    <thead>
+                                      <tr>
+                                        <th>Project Name</th>
+                                        <th>Project Owner</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Technology</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="availability">
+                                        <td>Available Capacity</td>
+                                        <td>Not Applicable</td>
+                                        <td>09/04/17</td>
+                                        <td>09/18/17</td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 scrollable">
+                                <div>
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>06/05/17</th>
+                                        <th>06/12/17</th>
+                                        <th>06/12/17</th>
+                                        <th>06/19/17</th>
+                                        <th>06/26/17</th>
+                                        <th>07/03/17</th>
+                                        <th>07/10/17</th>
+                                        <th>07/17/17</th>
+                                        <th>07/24/17</th>
+                                        <th>07/31/17</th>
+                                        <th>08/07/17</th>
+                                        <th>08/14/17</th>
+                                        <th>08/21/17</th>
+                                        <th>08/28/17</th>
+                                        <th>09/04/17</th>
+                                        <th>09/11/17</th>
+                                        <th>09/18/17</th>
+                                        <th>09/25/17</th>
+                                        <th>10/02/17</th>
+                                        <th>10/09/17</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="availability">
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
+                                <table class="table">
+                                  <thead>
+                                    <th>Grandtotal</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="availability">
+                                    <td>160</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="table-caption"><h4>Assign New Project</h4></div>
+                          <div class="row eResourcetable">
+                                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 left-table">
+                                  <table class="table" cellspacing="0" cellpadding="0" border="0">
+                                    <thead>
+                                      
+                                      <tr>
+                                        <th>Project Name</th>
+                                        <th>Project Owner</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Technology</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="dropdown">
+                                            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">&nbsp;</span>
+                                              <i class="material-icons">keyboard_arrow_down</i></button>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                                <li><a href="#nogo">Dalta</a></li>
+                                                <li><a href="#nogo">Apha</a></li>
+                                                <li><a href="#nogo">Beta</a></li>
+                                              </ul>
+                                            </div>
+                                        </td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td>
+                                          <div class="dropdown">
+                                            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">&nbsp;</span>
+                                              <i class="material-icons">keyboard_arrow_down</i></button>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                                <li><a href="#nogo">Dalta</a></li>
+                                                <li><a href="#nogo">Apha</a></li>
+                                                <li><a href="#nogo">Beta</a></li>
+                                              </ul>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 scrollable">
+                                <div>
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>06/05/17</th>
+                                        <th>06/12/17</th>
+                                        <th>06/12/17</th>
+                                        <th>06/19/17</th>
+                                        <th>06/26/17</th>
+                                        <th>07/03/17</th>
+                                        <th>07/10/17</th>
+                                        <th>07/17/17</th>
+                                        <th>07/24/17</th>
+                                        <th>07/31/17</th>
+                                        <th>08/07/17</th>
+                                        <th>08/14/17</th>
+                                        <th>08/21/17</th>
+                                        <th>08/28/17</th>
+                                        <th>09/04/17</th>
+                                        <th>09/11/17</th>
+                                        <th>09/18/17</th>
+                                        <th>09/25/17</th>
+                                        <th>10/02/17</th>
+                                        <th>10/09/17</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
+                                <table class="table">
+                                  <thead>
+                                    <th>Grandtotal</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
                   </div>
-                  <div class="form-group">
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="mobile">Mobile#</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <input type="text" class="form-control" id="mobile" placeholder="" name="mobile">
-                    </div>
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="home">Home#</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <input type="text" class="form-control" id="home" placeholder="" name="home">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="work">Work#</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 work">
-                      <div class="col-sm-4 col-md-6 col-lg-6">
-                        <input type="text" class="form-control" id="work" placeholder="" name="work">
-                      </div>
-                      <label class="control-label col-sm-2 col-md-2 col-lg-2" for="ext">Ext</label>
-                      <div class="col-sm-4 col-md-4 col-lg-4">
-                        <input type="text" class="form-control" id="ext" placeholder="" name="ext">
-                      </div>
-                    </div>
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="workLocation">Work Location</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <div class="dropdown">
-                        <button class="btn dropdown-toggle" id="workLocation" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Select</span>
-                        <i class="material-icons">keyboard_arrow_down</i></button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li><a href="#nogo">Fremont</a></li>
-                          <li><a href="#nogo">Thane</a></li>
-                          <li><a href="#nogo">Pune</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="email">Email</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <input type="text" class="form-control" id="email" placeholder="" name="email">
-                    </div>
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="aEmail">Alternate#</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                      <input type="text" class="form-control" id="aEmail" placeholder="" name="aEmail">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="skillSet">Skill Set</label>
-                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 skill-container dropdown">
-                      <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">&nbsp;</span>
-                      <i class="material-icons">keyboard_arrow_down</i></button>
-                      <div class="selected-technologies"></div>
-                      <ul class="skillSet-menu">
-                        <li><input type="checkbox" id="java"><label for="java">Java</label></li>
-                        <li><input type="checkbox" id="html"><label for="html">HTML</label></li>
-                        <li><input type="checkbox" id="php"><label for="php">PHP</label></li>
-                      </ul>
-                    </div>
-                  </div>
-                </form>
+                </div>
               </div>
-              <!-- tab 1 ends here -->
-              <!-- tab 2 content starts here -->
-              <div id="projectDetails" class="tab-pane fade">
-                <div class="table-caption"><h4>List of Projects currently assigned from <input type="text" class="weeklyDatePicker3"> to <input type="text" class="weeklyDatePicker4"></h4></div>
-                <div class="table-container">
-                  <div class="table-data-wrapper">
-                    <div class="table-data-container ">
-                         <table id="resourcesProjectDetails" class="stripe row-border order-column table modal-table" cellspacing="0" width="100%">
-                              <thead>
-                                  <tr>
-                                      <th>Project Name</th>
-                                      <th>Project Owner</th>
-                                      <th>Start Date</th>
-                                      <th>End Date</th>
-                                      <th>Technology</th>
-                                      <th>06/19/17</th>
-                                      <th>06/26/17</th>
-                                      <th>07/03/17</th>
-                                      <th>07/10/17</th>
-                                      <th>07/17/17</th>
-                                      <th>07/24/17</th>
-                                      <th>07/31/17</th>
-                                      <th>08/07/17</th>
-                                      <th>08/014/17</th>
-                                      <th>08/21/17</th>
-                                      <th>08/28/17</th>
-                                      <th>09/04/17</th>
-                                      <th>09/11/17</th>
-                                      <th>09/18/17</th>
-                                      <th>09/25/17</th>
-                                      <th>10/02/17</th>
-                                      <th>10/09/17</th>
-                                      <th>Grandtotal</th>
+              <div class="modal-footer">
+                <a href="#nogo" data-dismiss="modal">Cancel</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- modal 2 -->
+        <!-- Modal -->
+        <div class="modal fade" id="viewResourceDetails" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><img src="images/logo.png">"John Doe" Details</h4>
+              </div>
+              <div class="modal-body">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#employeeDetails">Resource Details</a></li>
+                  <li><a data-toggle="tab" href="#viewProjectDetails">Project Details</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div id="employeeDetails" class="tab-pane fade in active">
+                    <form class="form-horizontal" action="#nogo">
+                      <div class="form-group">
+                        <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="fname">First Name</label>
+                        <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                          <input type="text" class="form-control" id="fname" placeholder="" value="John" name="fname">
+                        </div>
+                        <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="lname">Last Name</label>
+                        <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                          <input type="text" class="form-control" id="lname" placeholder="" value="Doe" name="lname">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="email">Employee ID</label>
+                        <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                          <input type="text" class="form-control" id="email" value="51007" placeholder="" name="empId">
+                        </div>
+                        <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="role">Role</label>
+                        <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                          <div class="dropdown">
+                            <button class="btn dropdown-toggle" id="role" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Analyst</span>
+                              <i class="material-icons">keyboard_arrow_down</i></button>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li><a href="#nogo">Role 1</a></li>
+                                <li><a href="#nogo">Role 2</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="empType">Employee Type</label>
+                          <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                            <div class="dropdown">
+                              <button class="btn dropdown-toggle" id="empType" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Permanent</span>
+                                <i class="material-icons">keyboard_arrow_down</i></button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                  <li><a href="#nogo">Permanent</a></li>
+                                  <li><a href="#nogo">Contractual</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="status">Status</label>
+                            <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Status</span>
+                                  <i class="material-icons">keyboard_arrow_down</i></button>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                    <li><a href="#nogo">Assigned</a></li>
+                                    <li><a href="#nogo">Available</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="mobile">Mobile#</label>
+                              <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                                <input type="text" class="form-control" id="mobile" placeholder="" value="510-795-4800" name="mobile">
+                              </div>
+                              <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="home">Home#</label>
+                              <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                                <input type="text" class="form-control" id="home" placeholder="" value="510-795-4800" name="home">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="work">Work#</label>
+                              <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 work">
+                                <div class="col-sm-4 col-md-6 col-lg-6">
+                                  <input type="text" class="form-control" id="work" placeholder="" value="510-795-4800" name="work">
+                                </div>
+                                <label class="control-label col-sm-2 col-md-2 col-lg-2" for="ext">Ext</label>
+                                <div class="col-sm-4 col-md-4 col-lg-4">
+                                  <input type="text" class="form-control" id="ext" placeholder="" value="390" name="ext">
+                                </div>
+                              </div>
+                              <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="workLocation">Location</label>
+                              <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                                <div class="dropdown">
+                                  <button class="btn dropdown-toggle" id="workLocation" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Spring, Texas</span>
+                                    <i class="material-icons">keyboard_arrow_down</i></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                      <li><a href="#nogo">Fremont</a></li>
+                                      <li><a href="#nogo">Thane</a></li>
+                                      <li><a href="#nogo">Pune</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="email">Email</label>
+                                <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                                  <input type="text" class="form-control" id="email" placeholder="" value="john.doe@conns.com" name="email">
+                                </div>
+                                <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="aEmail">Alternate#</label>
+                                <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                                  <input type="text" class="form-control" id="aEmail" placeholder="" value="510-795-4800" name="aEmail">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="skillSet">Skill Set</label>
+                                <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 skill-container dropdown">
+                                  <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">&nbsp;</span>
+                                    <i class="material-icons">keyboard_arrow_down</i></button>
+                                    <div class="selected-technologies"><label name="java">Java<i class="material-icons">close</i></label> <label name="java">HTML<i class="material-icons">close</i></label></div>
+                                    <ul class="skillSet-menu">
+                                      <li><input type="checkbox" id="java" checked><label for="java">Java</label></li>
+                                      <li><input type="checkbox" id="html" checked><label for="html">HTML</label></li>
+                                      <li><input type="checkbox" id="php"><label for="php">PHP</label></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <!-- tab 1 ends here -->
+                            <!-- tab 2 content starts here -->
+                            <div id="viewProjectDetails" class="tab-pane fade">
+                              <div class="table-caption"><h4>List of Projects currently assigned from 07/03/2017 to 09/18/2017</h4></div>
+                              <div class="row eResourcetable">
+                                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 left-table">
+                                  <table class="table" cellspacing="0" cellpadding="0" border="0">
+                                    <thead>
+                                      <tr>
+                                        <th>Project Name</th>
+                                        <th>Project Owner</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Technology</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Delta</td>
+                                        <td>Trevor Matthews</td>
+                                        <td>07/03/17</td>
+                                        <td>08/21/17</td>
+                                        <td>Java</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Alpha</td>
+                                        <td>Kim Smith</td>
+                                        <td>07/03/17</td>
+                                        <td>08/21/17</td>
+                                        <td>Project Lead</td>
+                                      </tr>
+                                      <tr class="availability">
+                                        <td>Available Capacity</td>
+                                        <td>Not Applicable</td>
+                                        <td>09/04/17</td>
+                                        <td>09/18/17</td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 scrollable">
+                                <div>
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>06/05/17</th>
+                                        <th>06/12/17</th>
+                                        <th>06/12/17</th>
+                                        <th>06/19/17</th>
+                                        <th>06/26/17</th>
+                                        <th>07/03/17</th>
+                                        <th>07/10/17</th>
+                                        <th>07/17/17</th>
+                                        <th>07/24/17</th>
+                                        <th>07/31/17</th>
+                                        <th>08/07/17</th>
+                                        <th>08/14/17</th>
+                                        <th>08/21/17</th>
+                                        <th>08/28/17</th>
+                                        <th>09/04/17</th>
+                                        <th>09/11/17</th>
+                                        <th>09/18/17</th>
+                                        <th>09/25/17</th>
+                                        <th>10/02/17</th>
+                                        <th>10/09/17</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                      </tr>
+                                      <tr>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                      </tr>
+                                      <tr class="availability">
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
+                                <table class="table">
+                                  <thead>
+                                    <th>Grandtotal</th>
                                   </tr>
-                              </thead>
-                              <tbody>
+                                </thead>
+                                <tbody>
                                   <tr>
-                                      <td>Alpha</td>
-                                      <td>Justin Theriot</td>
-                                      <td>07/03/17</td>
-                                      <td>08/21/17</td>
-                                      <td>HTML</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>160</td>
+                                    <td>160</td>
                                   </tr>
                                   <tr>
-                                      <td>Beta</td>
-                                      <td>Kenny Turner</td>
-                                      <td>07/03/17</td>
-                                      <td>08/21/17</td>
-                                      <td>Java</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>160</td>
-                                  </tr>
-                                  <tr>
-                                     <td>Gamma</td>
-                                      <td>Hazel Smith</td>
-                                      <td>07/03/17</td>
-                                      <td>08/21/17</td>
-                                      <td>PHP</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>160</td>
+                                    <td>160</td>
                                   </tr>
                                   <tr class="availability">
-                                     <td>Available Capacity</td>
-                                      <td>Roger Twose</td>
-                                      <td>07/03/17</td>
-                                      <td>08/21/17</td>
-                                      <td>Not Applicable</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>40</td>
-                                      <td>160</td>
+                                    <td>160</td>
                                   </tr>
-                              </tbody>
-                          </table>
-                      </div>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="table-caption"><h4>Assign New Project</h4></div>
+                          <div class="row eResourcetable">
+                                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 left-table">
+                                  <table class="table" cellspacing="0" cellpadding="0" border="0">
+                                    <thead>
+
+                                      <tr>
+                                        <th>Project Name</th>
+                                        <th>Project Owner</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Technology</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="dropdown">
+                                            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">&nbsp;</span>
+                                              <i class="material-icons">keyboard_arrow_down</i></button>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                                <li><a href="#nogo">Dalta</a></li>
+                                                <li><a href="#nogo">Apha</a></li>
+                                                <li><a href="#nogo">Beta</a></li>
+                                              </ul>
+                                            </div>
+                                        </td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td>
+                                          <div class="dropdown">
+                                            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">&nbsp;</span>
+                                              <i class="material-icons">keyboard_arrow_down</i></button>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                                <li><a href="#nogo">Dalta</a></li>
+                                                <li><a href="#nogo">Apha</a></li>
+                                                <li><a href="#nogo">Beta</a></li>
+                                              </ul>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 scrollable">
+                                <div>
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>06/05/17</th>
+                                        <th>06/12/17</th>
+                                        <th>06/12/17</th>
+                                        <th>06/19/17</th>
+                                        <th>06/26/17</th>
+                                        <th>07/03/17</th>
+                                        <th>07/10/17</th>
+                                        <th>07/17/17</th>
+                                        <th>07/24/17</th>
+                                        <th>07/31/17</th>
+                                        <th>08/07/17</th>
+                                        <th>08/14/17</th>
+                                        <th>08/21/17</th>
+                                        <th>08/28/17</th>
+                                        <th>09/04/17</th>
+                                        <th>09/11/17</th>
+                                        <th>09/18/17</th>
+                                        <th>09/25/17</th>
+                                        <th>10/02/17</th>
+                                        <th>10/09/17</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                        <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
+                                <table class="table">
+                                  <thead>
+                                    <th>Grandtotal</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" class="form-control" id="fname" placeholder="" name="fname"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                    </div>
                   </div>
                 </div>
-                <div class="table-caption"><h4>Assign New Project</h4></div>
-                <div class="table-container">
-                  <div class="table-data-wrapper">
-                    <div class="table-data-container ">
-                         <table id="asignNewPorject" class="stripe row-border order-column table modal-table" cellspacing="0" width="100%">
-                              <thead>
-                                  <tr>
-                                      <th>Project Name</th>
-                                      <th>Project Owner</th>
-                                      <th>Start Date</th>
-                                      <th>End Date</th>
-                                      <th>Technology</th>
-                                      <th>06/19/17</th>
-                                      <th>06/26/17</th>
-                                      <th>07/03/17</th>
-                                      <th>07/10/17</th>
-                                      <th>07/17/17</th>
-                                      <th>07/24/17</th>
-                                      <th>07/31/17</th>
-                                      <th>08/07/17</th>
-                                      <th>08/014/17</th>
-                                      <th>08/21/17</th>
-                                      <th>08/28/17</th>
-                                      <th>09/04/17</th>
-                                      <th>09/11/17</th>
-                                      <th>09/18/17</th>
-                                      <th>09/25/17</th>
-                                      <th>10/02/17</th>
-                                      <th>10/09/17</th>
-                                      <th>Grand Total</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                  <tr>
-                                      <td>
-                                        <select>
-                                          <option>- Select -</option>
-                                          <option>Alpha</option>
-                                          <option>Beta</option>
-                                          <option>Gamma</option>
-                                        </select>
-                                      </td>
-                                      <td><input type="text" size="10"></td>
-                                      <td><input type="text" size="10"></td>
-                                      <td><input type="text" size="10"></td>
-                                      <td>
-                                        <select>
-                                          <option>- Select -</option>
-                                          <option>Java</option>
-                                          <option>HTML</option>
-                                        </select>
-                                      </td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5"></td>
-                                      <td><input type="text" size="5" value="160"></td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>
-                  </div>
+                <div class="modal-footer">
+                  <a href="#nogo" data-dismiss="modal">Cancel</a>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
                 </div>
               </div>
+
             </div>
           </div>
-          <div class="modal-footer">
-            <a href="#nogo" data-dismiss="modal">Cancel</a>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </body>
-  </html>
+        </body>
+        </html>
