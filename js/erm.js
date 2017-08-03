@@ -71,13 +71,19 @@ var resourcesAssigned = $('#resourcesAssigned').DataTable( {
 $(document).ready(function(){
 
 
-  $("body").on('click','.skill-container li label', function(e){
+  $("body").on('click','.skill-container li input', function(e){
     // console.log('i m in skill-container');
-    var selectedSkill = $(this).text();
-    var selectedSkillId = $(this).attr('for');
+    var selectedSkill = $(this).next().text();
+    var selectedSkillId = $(this).next().attr('for');
     //console.log(selectedSkill + "--> "+ selectedSkillId);
     //var currentStatus = $(this).prev();
-    $(this).parents().find('.selected-technologies').append("<label name="+selectedSkillId+">"+selectedSkill+"<i class='material-icons'>close</i></label");
+    //console.log($(this).is(":checked"));
+    if($(this).is(":checked")){
+      $(this).parents().find('.selected-technologies').append("<label name="+selectedSkillId+">"+selectedSkill+"<i class='material-icons'>close</i></label");
+    }
+    else{
+      $('.selected-technologies label[name='+selectedSkillId+']').remove();
+    }
   });
 $("body").on('click','.selected-technologies label i', function(){
   $(this).parent('label').remove();
