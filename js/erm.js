@@ -1,18 +1,18 @@
 window.onload=function(){
 
-var resources_table = $('#resources').DataTable( {
-        scrollY:        "300px",
-        scrollX:        true,
-        scrollCollapse: true,
-        paging:         false,
-        "sort": false,
-        "order": [],
-        "searching": false,
-        fixedColumns:   {
-            leftColumns: 5,
-            rightColumns: 1
-        }
-    } );
+// var resources_table = $('#resources').DataTable( {
+//         scrollY:        "300px",
+//         scrollX:        true,
+//         scrollCollapse: true,
+//         paging:         false,
+//         "sort": false,
+//         "order": [],
+//         "searching": false,
+//         fixedColumns:   {
+//             leftColumns: 5,
+//             rightColumns: 1
+//         }
+//     } );
 var resourcesDetailProject_table = $('#resourcesProjectDetails').DataTable( {
         scrollY:        "300px",
         scrollX:        true,
