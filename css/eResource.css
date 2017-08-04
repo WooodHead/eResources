@@ -158,8 +158,8 @@ span.calendaricon i {
     border: solid 1px #c5c5c5;
     background-color: #fff;
     position: relative;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 14px;/*
+    font-weight: bold;*/
     padding: 6px 25px 6px 16px;
     border-radius: 3px;
     width: 100%;
@@ -261,8 +261,8 @@ button.btn-primary:active, .open>.dropdown-toggle.btn-primary, .open>.dropdown-t
 }
 .dropdown-toggle {
     color: #333;
-    text-align: left;
-    font-weight: bold;
+    text-align: left;/*
+    font-weight: bold;*/
 }
 
 .dropdown button i {
@@ -294,6 +294,13 @@ button.btn-primary:active, .open>.dropdown-toggle.btn-primary, .open>.dropdown-t
 }
 .dropdown-menu > li {
     position: relative;
+}
+.dropdown-menu > li.search {
+    padding: 0px 9px;
+    margin-bottom: 5px;
+}
+.dropdown-menu > li.search::before {
+    display: none;
 }
 .dropdown-menu > li::before {
     content: "";
@@ -720,7 +727,7 @@ tr:nth-child(even) td {
 .left-table tr th:first-child, .left-table tr td:first-child {
     text-align: center;
 }
-#viewProjectDetails .left-table tr th:first-child, .left-table tr td:first-child {
+#projectDetails .left-table tr th:first-child, #projectDetails .left-table tr td:first-child, #viewProjectDetails .left-table tr td:first-child, #viewProjectDetails .left-table tr th:first-child{
     text-align: left;
 }
 .right-table {
@@ -738,8 +745,9 @@ tr:nth-child(even) td {
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   border-top: 0px;
-  padding: 8px;
+  padding: 8px 5px;
   white-space: nowrap;
+  position: relative;
 }
 .eResourcetable .table tr th:first-child,
 .eResourcetable .table tr td:first-child {
@@ -754,7 +762,64 @@ tr:nth-child(even) td {
 .eResourcetable .scrollable .table tr th:last-child, .eResourcetable .scrollable .table tr td:last-child {
     border-right: 0px;
 }
-
+.eResourcetable .table tr input[type='checkbox'] {
+    visibility: hidden;
+}
+.eResourcetable .table tr input[type='checkbox'] + label, .skill-container .skillSet-menu>li>div>label{
+ vertical-align: middle;
+ text-align: center;
+ line-height: 13px;
+ position: absolute;
+ cursor: pointer;
+ height: 16px;
+ width: 16px;
+ left: 10px;
+ top: 12px;
+ font-size: 13px;
+ background: #fff;
+ color: #fff;
+ border: solid 1px #c5c5c5;
+}
+.skill-container .skillSet-menu {
+    padding-bottom: 10px;
+}
+.skill-container .skillSet-menu>li>div {
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: default;
+}
+.skill-container .skillSet-menu>li>div>label{
+    position: relative;
+    height: 16px;
+    width: 16px;
+    left: -5px;
+    top: 2px;
+}
+.skill-container .skillSet-menu>li>div>label>i{
+    visibility: hidden;
+    top: -4px;
+    position: relative;
+    left: -2px;
+    font-size: 20px;
+}
+.skill-container .skillSet-menu>li>div.checked>label {
+    background-color: #388d3c;
+     
+}
+.skill-container .skillSet-menu>li>div.checked>label>i {
+    visibility: visible;
+}
+.eResourcetable .table tr input[type='checkbox']:checked + label {
+    background-color: #388d3c;
+}
+.eResourcetable .table tr input[type='checkbox'] + label i {
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.eResourcetable .table tr input[type='checkbox']:checked + label i {
+ display: block;
+}
 /* top-left border-radius */
 .eResourcetable .left-table .table tr:first-child th:first-child {
   border-top-left-radius: 5px;
@@ -794,8 +859,9 @@ tr:nth-child(even) td {
     height: 60px;
     background: #fff;
     padding: 10px;
-    left: 35px;
-    top: 60px;
+    right: -112px;
+    top: 32px;
+    z-index: 1;
   }
   .tool-tip-section:after {
     bottom: 100%;

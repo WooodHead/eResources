@@ -95,6 +95,10 @@ $("body").on('click','.selected-technologies label i', function(){
   $("#"+$(this).parent('label').attr("name")).click();
 })
   $("body").on('click','.dropdown-menu li', function(e){
+    if ($(this).hasClass('search')) {
+      console.log('I am in Search');
+    }
+    else {
      var initStatusTxt = $(this).parent().prev().children('.txt').text();
      var initStatusVal = $(this).parent().prev().children('.txt').attr('value');
 //console.log("ji");
@@ -105,11 +109,17 @@ $("body").on('click','.selected-technologies label i', function(){
      $(this).parent().children().removeClass('selected');
      //$(this).parent().find('i').remove();
      $(this).addClass('selected');
-  
-   
    //$(this).prepend('<i class="material-icons">done</i>');
+ }
+});
+$("body").on('click','.skillSet-menu>li>div', function(e){
+  $(this).toggleClass('checked');
 });
 
+$('.modal-toggle').click(function (e) {
+    var tab = e.target.hash;
+    $('li > a[href="' + tab + '"]').tab("show");
+});
 
   //Initialize the datePicker(I have taken format as mm-dd-yyyy, you can     //have your owh)
   $('.weeklyDatePicker1').datetimepicker({

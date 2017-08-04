@@ -113,44 +113,44 @@
               <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addResource"><i class="material-icons">add</i> Add Resource</button></legend></div>
             </div>
             <div class="row eResourcetable">
-              <div class="col-xs-4 col-sm-7 col-md-6 col-lg-4 left-table">
+              <div class="col-xs-4 col-sm-7 col-md-6 col-lg-5 left-table">
                 <table class="table" cellspacing="0" cellpadding="0" border="0">
                   <thead>
                     <tr>
-                      <th><input type="checkbox" id="test1"></th>
+                      <th><input type="checkbox" id="test1"><label for="test1"><i class="material-icons">done</i></label></th>
                       <th>Employee ID</th>
                       <th>Employee Name</th>
-                      <th>Project Assigned</th>
+                      <th>Projects Assigned</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox"></td>
-                      <td><a  data-toggle="modal" data-target="#viewResourceDetails" href="#nogo">John.Doe</a></td>
-                      <td>Justin Theriot</td>
-                      <td>Alpha</td>
+                      <td><input type="checkbox" id="test2"><label for="test2"><i class="material-icons">done</i></label></td>
+                      <td><a data-toggle="modal" data-target="#viewResourceDetails" href="#employeeDetails">John.Doe</a></td>
+                      <td>John Doe</td>
+                      <td><a data-toggle="modal" href="#viewProjectDetails" data-target="#viewResourceDetails">Alpha, Beta</a></td>
 
                     </tr>
                     <tr>
-                      <td><input type="checkbox"></td>
+                      <td><input type="checkbox" id="test3"><label for="test3"><i class="material-icons">done</i></label></td>
                       <td>Betty.Jones</td>
-                      <td>Kenny Turner</td>
-                      <td>Beta</td>
+                      <td>Betty Jones</td>
+                      <td>Beta, Gamma</td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox"></td>
+                      <td><input type="checkbox" id="test4"><label for="test4"><i class="material-icons">done</i></label></td>
                       <td>Hazel.Smith</td>
                       <td>Hazel Smith</td>
-                      <td>Gamma</td>
+                      <td>Alpha, Beta</td>
                     </tr>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" id="test5"><label for="test5"><i class="material-icons">done</i></label></td>
                     <td>Roger.Twose</td>
                     <td>Roger Twose</td>
-                    <td>Gamma</td>
+                    <td>Beta, Gamma</td>
                   </tbody>
               </table>
             </div>
-            <div class="col-xs-7 col-sm-4 col-md-4 col-lg-7 scrollable">
+            <div class="col-xs-7 col-sm-4 col-md-4 col-lg-6 scrollable">
               <div>
                 <table class="table">
                   <thead>
@@ -181,12 +181,12 @@
                     <tr>
                       <td>
                         <span class="resource-no">40</span>
-                          <div class="tool-tip-section">
-                          <ul>
-                            <li><span>Beta </span><span>: 20 hours</span></li>
-                            <li><span>Gamma </span><span>: 20 hours</span></li>
-                          </ul>
-                          </div>
+                        <div class="tool-tip-section">
+                        <ul>
+                          <li><span>Alpha </span><span>: 20 hours</span></li>
+                          <li><span>Beta </span><span>: 20 hours</span></li>
+                        </ul>
+                        </div>
                       </td>
                       <td>40</td>
                       <td>40</td>
@@ -281,7 +281,7 @@
             <div class="col-xs-1 col-sm-1 col-md-2 col-lg-1 right-table">
               <table class="table">
                 <thead>
-                  <th>Grandtotal</th>
+                  <th>Grand Total</th>
                 </tr>
               </thead>
               <tbody>
@@ -328,7 +328,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title"><img src="images/logo.png">Add new Resource</h4>
+              <h4 class="modal-title"><img src="images/logo.png">Add New Resource</h4>
             </div>
             <div class="modal-body">
               <ul class="nav nav-tabs">
@@ -441,10 +441,16 @@
                                   <i class="material-icons">keyboard_arrow_down</i></button>
                                   <div class="selected-technologies"></div>
                                   <ul class="skillSet-menu">
-                                    <li><input type="checkbox" id="java"><label for="java">Java</label></li>
-                                    <li><input type="checkbox" id="html"><label for="html">HTML</label></li>
-                                    <li><input type="checkbox" id="php"><label for="php">PHP</label></li>
-                                  </ul>
+                                      <li>
+                                        <div class="checked"><label><i class="material-icons">done</i></label>Java</div>
+                                      </li>
+                                      <li>
+                                        <div><label><i class="material-icons">done</i></label>HTML</div>
+                                      </li>
+                                      <li>
+                                        <div><label><i class="material-icons">done</i></label>PHP</div>
+                                      </li>
+                                    </ul>
                                 </div>
                               </div>
                             </form>
@@ -534,7 +540,7 @@
                               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
                                 <table class="table">
                                   <thead>
-                                    <th>Grandtotal</th>
+                                    <th>Grand Total</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -649,7 +655,7 @@
                               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
                                 <table class="table">
                                   <thead>
-                                    <th>Grandtotal</th>
+                                    <th>Grand Total</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -735,7 +741,7 @@
                             <label class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2" for="status">Status</label>
                             <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
                               <div class="dropdown">
-                                <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Status</span>
+                                <button class="btn dropdown-toggle" id="status" type="button" data-toggle="dropdown" data-hover="dropdown" aria-expanded="true"><span class="txt">Available</span>
                                   <i class="material-icons">keyboard_arrow_down</i></button>
                                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                                     <li><a href="#nogo">Assigned</a></li>
@@ -772,8 +778,8 @@
                                     <i class="material-icons">keyboard_arrow_down</i></button>
                                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                                       <li><a href="#nogo">Fremont</a></li>
-                                      <li><a href="#nogo">Thane</a></li>
-                                      <li><a href="#nogo">Pune</a></li>
+                                      <li><a href="#nogo">Spring</a></li>
+                                      <li><a href="#nogo">Houston</a></li>
                                     </ul>
                                   </div>
                                 </div>
@@ -795,9 +801,15 @@
                                     <i class="material-icons">keyboard_arrow_down</i></button>
                                     <div class="selected-technologies"><label name="java">Java<i class="material-icons">close</i></label> <label name="java">HTML<i class="material-icons">close</i></label></div>
                                     <ul class="skillSet-menu">
-                                      <li><input type="checkbox" id="java" checked><label for="java">Java</label></li>
-                                      <li><input type="checkbox" id="html" checked><label for="html">HTML</label></li>
-                                      <li><input type="checkbox" id="php"><label for="php">PHP</label></li>
+                                      <li>
+                                        <div class="checked"><label><i class="material-icons">done</i></label>Java</div>
+                                      </li>
+                                      <li>
+                                        <div><label><i class="material-icons">done</i></label>HTML</div>
+                                      </li>
+                                      <li>
+                                        <div><label><i class="material-icons">done</i></label>PHP</div>
+                                      </li>
                                     </ul>
                                   </div>
                                 </div>
@@ -821,25 +833,25 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td>Delta</td>
+                                        <td>Alpha</td>
                                         <td>Trevor Matthews</td>
                                         <td>07/03/17</td>
                                         <td>08/21/17</td>
-                                        <td>Java</td>
+                                        <td>HTML</td>
                                       </tr>
                                       <tr>
-                                        <td>Alpha</td>
+                                        <td>Beta</td>
                                         <td>Kim Smith</td>
                                         <td>07/03/17</td>
                                         <td>08/21/17</td>
-                                        <td>Project Lead</td>
+                                        <td>Java</td>
                                       </tr>
                                       <tr class="availability">
                                         <td>Available Capacity</td>
                                         <td>Not Applicable</td>
                                         <td>09/04/17</td>
                                         <td>09/18/17</td>
-                                        <td></td>
+                                        <td>Not Applicable</td>
                                       </tr>
                                     </tbody>
                                   </tbody>
@@ -946,7 +958,7 @@
                               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
                                 <table class="table">
                                   <thead>
-                                    <th>Grandtotal</th>
+                                    <th>Grand Total</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -1067,7 +1079,7 @@
                               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
                                 <table class="table">
                                   <thead>
-                                    <th>Grandtotal</th>
+                                    <th>Grand Total</th>
                                   </tr>
                                 </thead>
                                 <tbody>

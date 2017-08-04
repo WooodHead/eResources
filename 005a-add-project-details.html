@@ -72,26 +72,29 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1"></div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
           <div class="dropdown">
-            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">Select Technology</span>
+            <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" data-hover="dropdown"><span class="txt">Select Group</span>
               <i class="material-icons">keyboard_arrow_down</i></button>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li><a href="#nogo">Java</a></li>
-                <li><a href="#nogo">HTML</a></li>
-                <li><a href="#nogo">PHP</a></li>
+                <li><a href="#nogo">Support</a></li>
+                <li><a href="#nogo">Project</a></li>
+                <li><a href="#nogo">Demand</a></li>
+                <li><a href="#nogo">Vacation</a></li>
               </ul>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center search">
-            <input type="text" placeholder="Search Resource Name"><a href="#nogo" class="search-icon"><i class="material-icons">search</i></a>
+            <input type="text" placeholder="Search Project Name"><a href="#nogo" class="search-icon"><i class="material-icons">search</i></a>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 text-right">
             <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Select Projects</span>
+              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="txt">Select Resources</span>
                 <i class="material-icons">keyboard_arrow_down</i></button>
                 <ul class="dropdown-menu">
-                  <li><a href="#nogo">Alpha</a></li>
-                  <li><a href="#nogo">Beta</a></li>
-                  <li><a href="#nogo">Gamma</a></li>
+                  <li class="search"><input type="text"></li>
+                  <li><a href="#nogo">John Doe</a></li>
+                  <li><a href="#nogo">Betty Jones</a></li>
+                  <li><a href="#nogo">Hazel Smith</a></li>
+                  <li><a href="#nogo">Roger Twose</a></li>
                 </ul>
               </div>
             </div>
@@ -113,11 +116,11 @@
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4 text-right"><legend><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addProject"><i class="material-icons">add</i> Add Project</button></legend></div>
           </div>
           <div class="row eResourcetable">
-            <div class="col-xs-4 col-sm-8 col-md-6 col-lg-4 left-table">
+            <div class="col-xs-4 col-sm-8 col-md-6 col-lg-5 left-table">
               <table class="table" cellspacing="0" cellpadding="0" border="0">
                 <thead>
                   <tr>
-                    <th><input type="checkbox"></th>
+                    <th><input type="checkbox" id="test13"><label for="test13"><i class="material-icons">done</i></label></th>
                     <th>Project Name</th>
                     <th>Project Owner</th>
                     <th>Start Date</th>
@@ -126,28 +129,28 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" id="test14"><label for="test14"><i class="material-icons">done</i></label></td>
                     <td><a data-toggle="modal" data-target="#viewProjectDetails" href="#nogo">Delta</a></td>
-                    <td>Justin Theriot</td>
+                    <td>Trevor Matthews</td>
                     <td>07/03/2017</td>
                     <td>08/21/2017</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" id="test15"><label for="test15"><i class="material-icons">done</i></label></td>
                     <td>Alpha</td>
                     <td>Kim Smith</td>
                     <td>07/03/2017</td>
                     <td>08/21/2017</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" id="test16"><label for="test16"><i class="material-icons">done</i></label></td>
                     <td>Beta</td>
                     <td>Erika Branson</td>
                     <td>07/03/2017</td>
                     <td>08/21/2017</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" id="test17"><label for="test17"><i class="material-icons">done</i></label></td>
                     <td>Gamma</td>
                     <td>Karen Murphy</td>
                     <td>07/03/2017</td>
@@ -157,7 +160,7 @@
               </tbody>
             </table>
           </div>
-          <div class="col-xs-7 col-sm-2 col-md-4 col-lg-7 scrollable">
+          <div class="col-xs-7 col-sm-2 col-md-4 col-lg-6 scrollable">
             <div>
               <table class="table">
                 <thead>
@@ -280,7 +283,7 @@
           <div class="col-xs-1 col-sm-2 col-md-2 col-lg-1 right-table">
             <table class="table">
               <thead>
-                <th>Grandtotal</th>
+                <th>Grand Total</th>
               </tr>
             </thead>
             <tbody>
@@ -349,39 +352,39 @@
                   </div>
                   Resources Availability in hours from 07/03/2017 to 08/21/2017</h4></div>
                   <div class="row eResourcetable">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 left-table">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5 left-table">
                       <table class="table" cellspacing="0" cellpadding="0" border="0">
                         <thead>
                           <tr>
-                            <th><input type="checkbox"></th>
+                            <th><input type="checkbox" id="test1"><label for="test1"><i class="material-icons">done</i></label></th>
                             <th>Employee ID</th>
                             <th>Employee Name</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" id="test2"><label for="test2"><i class="material-icons">done</i></label></td>
                             <td>John.Doe</td>
                             <td>Justin Theriot</td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" id="test3"><label for="test3"><i class="material-icons">done</i></label></td>
                             <td>Betty.Jones</td>
                             <td>Kenny Turner</td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" id="test4"><label for="test4"><i class="material-icons">done</i></label></td>
                             <td>Hazel.Smith</td>
                             <td>Hazel Smith</td>
                           </tr>
-                          <td><input type="checkbox"></td>
+                          <td><input type="checkbox" id="test5"><label for="test5"><i class="material-icons">done</i></label></td>
                           <td>Roger.Twose</td>
                           <td>Roger Twose</td>
                         </tbody>
                       </tbody>
                     </table>
                   </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 scrollable">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 scrollable">
                     <div>
                       <table class="table">
                         <thead>
@@ -504,7 +507,7 @@
                   <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
                     <table class="table">
                       <thead>
-                        <th>Grandtotal</th>
+                        <th>Grand Total</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -678,30 +681,30 @@
                     </div>
                     Resources Availability in hours from 07/03/2017 to 08/21/2017</h4></div>
                     <div class="row eResourcetable">
-                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 left-table">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5 left-table">
                         <table class="table" cellspacing="0" cellpadding="0" border="0">
                           <thead>
                             <tr>
-                              <th><input type="checkbox"></th>
+                              <th><input type="checkbox" id="test6"><label for="test6"><i class="material-icons">done</i></label></th>
                               <th>Employee ID</th>
                               <th>Employee Name</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td><input type="checkbox"></td>
+                              <td><input type="checkbox" id="test7"><label for="test7"><i class="material-icons">done</i></label></td>
                               <td>John.Doe</td>
                               <td>Justin Theriot</td>
                             </tr>
                             <tr>
-                              <td><input type="checkbox"></td>
+                              <td><input type="checkbox" id="test8"><label for="test8"><i class="material-icons">done</i></label></td>
                               <td>Betty.Jones</td>
                               <td>Kenny Turner</td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
-                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 scrollable">
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 scrollable">
                         <div>
                           <table class="table">
                             <thead>
@@ -781,7 +784,7 @@
                         <table class="table">
                           <thead>
                             <tr>
-                              <th>Grandtotal</th>
+                              <th>Grand Total</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -798,31 +801,31 @@
                     <div class="text-right"><button type="button" class="btn btn-primary">Assign to Project</button></div>
                     <div class="table-caption"><h4>Resources currently Assigned to Project</h4></div>
                     <div class="row eResourcetable">
-                      <div class="row eResourcetable">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 left-table">
+                      <div class="">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5 left-table">
                           <table class="table" cellspacing="0" cellpadding="0" border="0">
                             <thead>
                               <tr>
-                                <th><input type="checkbox"></th>
+                                <th><input type="checkbox" id="test9"><label for="test9"><i class="material-icons">done</i></label></th>
                                 <th>Employee ID</th>
                                 <th>Employee Name</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" id="test10"><label for="test10"><i class="material-icons">done</i></label></td>
                                 <td>Hazel.Smith</td>
                                 <td>Hazel Smith</td>
                               </tr>
                               <tr>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" id="test11"><label for="test11"><i class="material-icons">done</i></label></td>
                                 <td>Roger.Twose</td>
                                 <td>Roger Twose</td>
                               </tr>
                             </tbody>
                           </table>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 scrollable">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 scrollable">
                           <div>
                             <table class="table">
                               <thead>
@@ -901,7 +904,7 @@
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 right-table">
                           <table class="table">
                             <thead>
-                              <th>Grandtotal</th>
+                              <th>Grand Total</th>
                             </tr>
                           </thead>
                           <tbody>
