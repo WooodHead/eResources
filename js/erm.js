@@ -1,74 +1,6 @@
 window.onload=function(){
 
-// var resources_table = $('#resources').DataTable( {
-//         scrollY:        "300px",
-//         scrollX:        true,
-//         scrollCollapse: true,
-//         paging:         false,
-//         "sort": false,
-//         "order": [],
-//         "searching": false,
-//         fixedColumns:   {
-//             leftColumns: 5,
-//             rightColumns: 1
-//         }
-//     } );
-var resourcesDetailProject_table = $('#resourcesProjectDetails').DataTable( {
-        scrollY:        "300px",
-        scrollX:        true,
-        scrollCollapse: true,
-        paging:         false,
-        "sort": false,
-        "order": [],
-        "searching": false,
-        fixedColumns:   {
-            leftColumns: 4,
-            rightColumns: 1
-        }
-    } );
-
-var asignNewPorject = $('#asignNewPorject').DataTable( {
-        scrollY:        "300px",
-        scrollX:        true,
-        scrollCollapse: true,
-        paging:         false,
-        "sort": false,
-        "order": [],
-        "searching": false,
-        fixedColumns:   {
-            leftColumns: 5,
-            rightColumns: 1
-        }
-    } );
-
-var projectResourcesDetails = $('#projectResourcesDetails').DataTable( {
-        scrollY:        "300px",
-        scrollX:        true,
-        scrollCollapse: true,
-        paging:         false,
-        "sort": false,
-        "order": [],
-        "searching": false,
-        fixedColumns:   {
-            leftColumns: 3,
-            rightColumns: 1
-        }
-    } );
-
-var resourcesAssigned = $('#resourcesAssigned').DataTable( {
-        scrollY:        "300px",
-        scrollX:        true,
-        scrollCollapse: true,
-        paging:         false,
-        "sort": false,
-        "order": [],
-        "searching": false,
-        fixedColumns:   {
-            leftColumns: 3,
-            rightColumns: 1
-        }
-    } );
-$(document).ready(function(){
+//$(document).ready(function(){
 // tootip script starts 
 $(".tool-tip-section").hide();
   $(".scrollable td > span").hover(function(){
@@ -80,9 +12,7 @@ $(".tool-tip-section").hide();
     // console.log('i m in skill-container');
     var selectedSkill = $(this).next().text();
     var selectedSkillId = $(this).next().attr('for');
-    //console.log(selectedSkill + "--> "+ selectedSkillId);
-    //var currentStatus = $(this).prev();
-    //console.log($(this).is(":checked"));
+    
     if($(this).is(":checked")){
       $(this).parents().find('.selected-technologies').append("<label name="+selectedSkillId+">"+selectedSkill+"<i class='material-icons'>close</i></label");
     }
@@ -94,10 +24,10 @@ $(".tool-tip-section").hide();
 $("body").on('click','.selected-technologies label i', function(){
   $(this).parent('label').remove();
   $(".skillSet-menu>li>div:contains("+ $(this).parent().attr('name')+")").removeClass('checked');
-})
+});
   $("body").on('click','.dropdown-menu li', function(e){
     if ($(this).hasClass('search')) {
-      console.log('I am in Search');
+      //console.log('I am in Search');
     }
     else {
      var initStatusTxt = $(this).parent().prev().children('.txt').text();
@@ -235,8 +165,8 @@ $('.modal-toggle').click(function (e) {
   //      useCurrent: false, //Important! See issue #1075
   //      format: 'DD/MM/YYYY'
   //  });
-moment.locale('en', {
+  moment.locale('en', {
         week: { dow: 1 } // Monday is the first day of the week
     });
-});
+//});
 }//]]> 
