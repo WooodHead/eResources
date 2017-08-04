@@ -287,6 +287,9 @@ button.btn-primary:active, .open>.dropdown-toggle.btn-primary, .open>.dropdown-t
     width: 120px;
     border-radius: 0;
 }
+.table-caption > h4 > input {
+    width: 95px;
+}
 .dropdown-menu .selected {
     position: relative;
     cursor: default;
