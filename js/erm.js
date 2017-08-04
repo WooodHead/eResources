@@ -90,9 +90,10 @@ $(".tool-tip-section").hide();
       $('.selected-technologies label[name='+selectedSkillId+']').remove();
     }
   });
+
 $("body").on('click','.selected-technologies label i', function(){
   $(this).parent('label').remove();
-  $("#"+$(this).parent('label').attr("name")).click();
+  $(".skillSet-menu>li>div:contains("+ $(this).parent().attr('name')+")").removeClass('checked');
 })
   $("body").on('click','.dropdown-menu li', function(e){
     if ($(this).hasClass('search')) {
@@ -113,7 +114,15 @@ $("body").on('click','.selected-technologies label i', function(){
  }
 });
 $("body").on('click','.skillSet-menu>li>div', function(e){
+    var selectedSkill = $(this).text().replace('done','');
   $(this).toggleClass('checked');
+  if($(this).hasClass('checked')){
+    $(this).parents().find('.selected-technologies').append("<label name="+selectedSkill+">"+selectedSkill+"<i class='material-icons'>close</i></label");
+  }
+  else
+  {
+      $('.selected-technologies label[name='+selectedSkill+']').remove();
+    }
 });
 
 $('.modal-toggle').click(function (e) {
